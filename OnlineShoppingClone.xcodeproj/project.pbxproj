@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37023F55B2300680DD9 /* AppDelegate.swift */; };
-		F26DA37323F55B2300680DD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37223F55B2300680DD9 /* SceneDelegate.swift */; };
-		F26DA37523F55B2300680DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37423F55B2300680DD9 /* ViewController.swift */; };
-		F26DA37823F55B2300680DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37623F55B2300680DD9 /* Main.storyboard */; };
 		F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37923F55B2500680DD9 /* Assets.xcassets */; };
 		F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		F26DA36D23F55B2300680DD9 /* OnlineShoppingClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShoppingClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26DA37023F55B2300680DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F26DA37223F55B2300680DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F26DA37423F55B2300680DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F26DA37723F55B2300680DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26DA37923F55B2500680DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26DA37C23F55B2500680DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F26DA37E23F55B2500680DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				F26DA37023F55B2300680DD9 /* AppDelegate.swift */,
-				F26DA37223F55B2300680DD9 /* SceneDelegate.swift */,
-				F26DA37423F55B2300680DD9 /* ViewController.swift */,
-				F26DA37623F55B2300680DD9 /* Main.storyboard */,
 				F26DA37923F55B2500680DD9 /* Assets.xcassets */,
 				F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */,
 				F26DA37E23F55B2500680DD9 /* Info.plist */,
@@ -127,7 +118,6 @@
 			files = (
 				F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */,
 				F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */,
-				F26DA37823F55B2300680DD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +128,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26DA37523F55B2300680DD9 /* ViewController.swift in Sources */,
 				F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */,
-				F26DA37323F55B2300680DD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F26DA37623F55B2300680DD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F26DA37723F55B2300680DD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +266,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OnlineShoppingClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OnlineShoppingClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
