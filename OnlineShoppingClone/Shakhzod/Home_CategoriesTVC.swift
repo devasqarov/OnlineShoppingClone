@@ -14,7 +14,7 @@ struct Home_Product{
     var currecy: String = "UZS"
     var discount: String = "10%"
     var howmany: Int = 0
-    var image: UIImage = #imageLiteral(resourceName: "product1")
+    var image: UIImage = #imageLiteral(resourceName: "card2")
 }
 
 class Home_CategoriesTVC: UITableViewCell {

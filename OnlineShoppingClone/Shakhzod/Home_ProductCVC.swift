@@ -49,7 +49,7 @@ class Home_ProductCVC: UICollectionViewCell {
         
         counterView.translatesAutoresizingMaskIntoConstraints = false
         counterView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        counterView.widthAnchor.constraint(equalToConstant: 140).isActive = true
+        counterView.widthAnchor.constraint(equalToConstant: 130).isActive = true
         counterView.topAnchor.constraint(equalTo: superView.topAnchor, constant: 10).isActive = true
         counterView.rightAnchor.constraint(equalTo: superView.rightAnchor, constant: -10).isActive = true
         
@@ -66,14 +66,39 @@ class Home_ProductCVC: UICollectionViewCell {
         addBtn.imageView?.image = #imageLiteral(resourceName: "add")
         addBtn.imageView?.tintColor = #colorLiteral(red: 0.04300250858, green: 0.5516898036, blue: 0.267576158, alpha: 1)
         addBtn.addTarget(self, action: #selector(addPressed), for: .touchUpInside)
+        
+        counterView.addSubview(numberLbl)
+        counterView.addSubview(removeBtn)
+        counterView.addSubview(addBtn)
+        
+        numberLbl.translatesAutoresizingMaskIntoConstraints = false
+        numberLbl.centerXAnchor.constraint(equalTo: counterView.centerXAnchor).isActive = true
+        numberLbl.centerYAnchor.constraint(equalTo: counterView.centerYAnchor).isActive = true
+        numberLbl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        numberLbl.widthAnchor.constraint(equalToConstant: 30).isActive = true
+
+        
+        addBtn.translatesAutoresizingMaskIntoConstraints = false
+        addBtn.leftAnchor.constraint(equalTo: numberLbl.rightAnchor, constant: 10).isActive = true
+        addBtn.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        addBtn.widthAnchor.constraint(equalToConstant: 30).isActive = true
+
+        
+        removeBtn.translatesAutoresizingMaskIntoConstraints = false
+        removeBtn.rightAnchor.constraint(equalTo: numberLbl.leftAnchor, constant: -10).isActive = true
+        removeBtn.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        removeBtn.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        
     }
 
     @objc func removeBtnPressed(){
         numberOfProductsToBuy -= 1
+        print(numberOfProductsToBuy)
     }
     
     @objc func addPressed(num: UILabel){
         numberOfProductsToBuy += 1
+        print(numberOfProductsToBuy)
     }
 
 }
