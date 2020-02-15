@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
-        
-        window?.rootViewController = DetailProductVC()
+
+        window?.rootViewController = FavoriteProductsVC(nibName: "FavoriteProductsVC", bundle: nil)
         window?.makeKeyAndVisible()
         return true
     }
