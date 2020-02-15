@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D6119C723F8412200E4E0F6 /* FavoriteWatchedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEE1123F5965D00354724 /* FavoriteWatchedTVC.swift */; };
+		2D6119C823F8412200E4E0F6 /* FavoriteProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEE0523F5940800354724 /* FavoriteProductsVC.swift */; };
+		2D6119C923F8412200E4E0F6 /* PublicOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEE1923F6670500354724 /* PublicOfferVC.swift */; };
+		2D6119CA23F8412200E4E0F6 /* WatchedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEE0923F594DD00354724 /* WatchedProductsVC.swift */; };
+		2D6119CB23F8412200E4E0F6 /* FAQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEE1523F666EF00354724 /* FAQVC.swift */; };
 		2D8CEE0823F5940800354724 /* FavoriteProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CEE0623F5940800354724 /* FavoriteProductsVC.xib */; };
 		2D8CEE0C23F594DD00354724 /* WatchedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CEE0A23F594DD00354724 /* WatchedProductsVC.xib */; };
 		2D8CEE1423F5965D00354724 /* FavoriteWatchedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8CEE1223F5965D00354724 /* FavoriteWatchedTVC.xib */; };
@@ -82,7 +87,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		2D6119BF23F82ECF00E4E0F6 /* Rakhmatillo's files */ = {
+		2D6119BF23F82ECF00E4E0F6 /* rakhmatillo */ = {
 			isa = PBXGroup;
 			children = (
 				2D8CEE0523F5940800354724 /* FavoriteProductsVC.swift */,
@@ -96,7 +101,7 @@
 				2D8CEE1923F6670500354724 /* PublicOfferVC.swift */,
 				2D8CEE1A23F6670500354724 /* PublicOfferVC.xib */,
 			);
-			path = "Rakhmatillo's files";
+			path = rakhmatillo;
 			sourceTree = "<group>";
 		};
 		F26DA36423F55B2300680DD9 = {
@@ -121,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F2E680E523F83E6200B7442E /* eldor */,
-				2D6119BF23F82ECF00E4E0F6 /* Rakhmatillo's files */,
+				2D6119BF23F82ECF00E4E0F6 /* rakhmatillo */,
 				F26DA37023F55B2300680DD9 /* AppDelegate.swift */,
 				F26DA37923F55B2500680DD9 /* Assets.xcassets */,
 				F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */,
@@ -265,12 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6119C823F8412200E4E0F6 /* FavoriteProductsVC.swift in Sources */,
 				CEE1B28A23F70B0F00911A96 /* CustomTransitionAnimation.swift in Sources */,
 				F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */,
 				CEE1B28823F6E1B000911A96 /* DetailProductImageVC.swift in Sources */,
+				2D6119C923F8412200E4E0F6 /* PublicOfferVC.swift in Sources */,
+				2D6119C723F8412200E4E0F6 /* FavoriteWatchedTVC.swift in Sources */,
 				CECAEC3223F68C5600543669 /* DetailProductCVC.swift in Sources */,
 				CE4CE56823F5941A00F25E18 /* CustomNotification.swift in Sources */,
 				CECAEC1B23F67D0100543669 /* DetailProductVC.swift in Sources */,
+				2D6119CB23F8412200E4E0F6 /* FAQVC.swift in Sources */,
+				2D6119CA23F8412200E4E0F6 /* WatchedProductsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
