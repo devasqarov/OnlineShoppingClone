@@ -16,7 +16,7 @@ class Home_ProductCVC: UICollectionViewCell {
     @IBOutlet weak var productCurrencyLbl: UILabel!
     @IBOutlet weak var productName: UILabel!
     var productAddBtn: UIButton!
-    
+    var numberOfProductsToBuy: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,26 +38,43 @@ class Home_ProductCVC: UICollectionViewCell {
     
     
     @objc func addBtnPressed(_ sender: UIButton) {
-        addProdCounter()
+        addProdCounter(superView: self.containerView)
     }
     
-    public func addProdCounter(){
+    public func addProdCounter(superView: UIView){
         let counterView = UIView()
         counterView.layer.cornerRadius = 10
-        counterView.tintColor = .red
-        counterView.backgroundColor = .green
+        counterView.backgroundColor = .white
         self.containerView.insertSubview(counterView, aboveSubview: productAddBtn)
         
         counterView.translatesAutoresizingMaskIntoConstraints = false
         counterView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        counterView.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        counterView.topAnchor.constraint(equalTo: self.containerView.topAnchor, constant: 10).isActive = true
-        counterView.rightAnchor.constraint(equalTo: self.containerView.rightAnchor, constant: -10).isActive = true
+        counterView.widthAnchor.constraint(equalToConstant: 140).isActive = true
+        counterView.topAnchor.constraint(equalTo: superView.topAnchor, constant: 10).isActive = true
+        counterView.rightAnchor.constraint(equalTo: superView.rightAnchor, constant: -10).isActive = true
         
+        let numberLbl = UILabel()
+        numberLbl.tintColor = .black
+        numberLbl.text = "\(numberOfProductsToBuy)"
         
+        let removeBtn = UIButton()
+        removeBtn.imageView?.image = #imageLiteral(resourceName: "remove")
+        removeBtn.imageView?.tintColor = #colorLiteral(red: 0.04300250858, green: 0.5516898036, blue: 0.267576158, alpha: 1)
+        removeBtn.addTarget(self, action: #selector(removeBtnPressed), for: .touchUpInside)
+        
+        let addBtn = UIButton()
+        addBtn.imageView?.image = #imageLiteral(resourceName: "add")
+        addBtn.imageView?.tintColor = #colorLiteral(red: 0.04300250858, green: 0.5516898036, blue: 0.267576158, alpha: 1)
+        addBtn.addTarget(self, action: #selector(addPressed), for: .touchUpInside)
     }
 
+    @objc func removeBtnPressed(){
+        numberOfProductsToBuy -= 1
+    }
     
+    @objc func addPressed(num: UILabel){
+        numberOfProductsToBuy += 1
+    }
 
 }
 
