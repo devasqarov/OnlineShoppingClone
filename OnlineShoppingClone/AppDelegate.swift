@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = UINavigationController(rootViewController: HomeVC(nibName: "HomeVC", bundle: nil))
         window?.makeKeyAndVisible()
         return true
     }
