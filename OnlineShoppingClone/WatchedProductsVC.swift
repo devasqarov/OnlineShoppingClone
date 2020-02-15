@@ -14,14 +14,16 @@ class WatchedProductsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    }
+    
+    func initUI(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "FavoriteWatchedTVC", bundle: nil), forCellReuseIdentifier: "favoriteTVC")
-        
     }
-
-
-
+    
 }
 
 extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
@@ -47,7 +49,7 @@ extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
+        
         if self.view.frame.height <= 700{
             return self.view.frame.height / 4.9
         }else {
@@ -62,7 +64,7 @@ extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     
-   
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let hView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
         hView.backgroundColor = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9803921569, alpha: 1)
@@ -70,7 +72,7 @@ extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
         titleLbl.text = "Beverages/Drink"
         hView.addSubview(titleLbl)
         return hView
-            
+        
     }
     
     

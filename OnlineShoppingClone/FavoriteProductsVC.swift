@@ -13,11 +13,11 @@ class FavoriteProductsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        initUI()
     }
     
     
-    func setupUI(){
+    func initUI(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "FavoriteWatchedTVC", bundle: nil), forCellReuseIdentifier: "favoriteTVC")
