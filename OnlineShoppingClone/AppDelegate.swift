@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        window?.rootViewController = TestVC()
+        window?.rootViewController = DetailProductVC()
         window?.makeKeyAndVisible()
         return true
     }
