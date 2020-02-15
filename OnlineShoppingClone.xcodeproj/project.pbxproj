@@ -73,6 +73,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2D6119BF23F82ECF00E4E0F6 /* Rakhmatillo's files */ = {
+			isa = PBXGroup;
+			children = (
+				2D8CEE0523F5940800354724 /* FavoriteProductsVC.swift */,
+				2D8CEE0623F5940800354724 /* FavoriteProductsVC.xib */,
+				2D8CEE0923F594DD00354724 /* WatchedProductsVC.swift */,
+				2D8CEE0A23F594DD00354724 /* WatchedProductsVC.xib */,
+				2D8CEE1123F5965D00354724 /* FavoriteWatchedTVC.swift */,
+				2D8CEE1223F5965D00354724 /* FavoriteWatchedTVC.xib */,
+				2D8CEE1523F666EF00354724 /* FAQVC.swift */,
+				2D8CEE1623F666EF00354724 /* FAQVC.xib */,
+				2D8CEE1923F6670500354724 /* PublicOfferVC.swift */,
+				2D8CEE1A23F6670500354724 /* PublicOfferVC.xib */,
+			);
+			path = "Rakhmatillo's files";
+			sourceTree = "<group>";
+		};
 		F26DA36423F55B2300680DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,20 +111,11 @@
 		F26DA36F23F55B2300680DD9 /* OnlineShoppingClone */ = {
 			isa = PBXGroup;
 			children = (
+				2D6119BF23F82ECF00E4E0F6 /* Rakhmatillo's files */,
 				F26DA37023F55B2300680DD9 /* AppDelegate.swift */,
 				F26DA37923F55B2500680DD9 /* Assets.xcassets */,
 				F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */,
 				F26DA37E23F55B2500680DD9 /* Info.plist */,
-				2D8CEE0523F5940800354724 /* FavoriteProductsVC.swift */,
-				2D8CEE0623F5940800354724 /* FavoriteProductsVC.xib */,
-				2D8CEE0923F594DD00354724 /* WatchedProductsVC.swift */,
-				2D8CEE0A23F594DD00354724 /* WatchedProductsVC.xib */,
-				2D8CEE1123F5965D00354724 /* FavoriteWatchedTVC.swift */,
-				2D8CEE1223F5965D00354724 /* FavoriteWatchedTVC.xib */,
-				2D8CEE1523F666EF00354724 /* FAQVC.swift */,
-				2D8CEE1623F666EF00354724 /* FAQVC.xib */,
-				2D8CEE1923F6670500354724 /* PublicOfferVC.swift */,
-				2D8CEE1A23F6670500354724 /* PublicOfferVC.xib */,
 			);
 			path = OnlineShoppingClone;
 			sourceTree = "<group>";
