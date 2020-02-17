@@ -57,8 +57,7 @@ extension Home_CategoriesTVC: UICollectionViewDelegate, UICollectionViewDataSour
         product.productName.text = tempDataProducts[indexPath.row].name
         product.productPriceLbl.text = "\(tempDataProducts[indexPath.row].price)"
         product.productCurrencyLbl.text = tempDataProducts[indexPath.row].currecy
-        
-        
+    
         return product
     }
     

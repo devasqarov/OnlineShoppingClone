@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailProductVC: UIViewController {
-
+    
     @IBOutlet weak var imageCollectionView : UICollectionView!
     @IBOutlet weak var similarCollectionView: UICollectionView!
     @IBOutlet weak var saleLbl: UILabel!
@@ -24,9 +24,19 @@ class DetailProductVC: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     
     
+    
     var imageData: [UIImage] = [#imageLiteral(resourceName: "product3"), #imageLiteral(resourceName: "product1"), #imageLiteral(resourceName: "product2")]
-    var similarProductData: [String] = []
-    let identifierDetailPCVC = "DetailProductCVC"
+    var similarProductData: [Home_Product]{
+        return [
+            Home_Product(),
+            Home_Product(),
+            Home_Product(),
+            Home_Product(),
+            Home_Product()
+        ]
+    }
+    let identifierDetailPImageCVC = "DetailProductCVC"
+    let identifierDetailPSimilarCVC = "Home_ProductCVC"
     let imageVCTransion = CustomTransionAnimation()
     var productCount : Int = 0 {
         didSet{
@@ -41,9 +51,11 @@ class DetailProductVC: UIViewController {
     }
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupView()
         configureCV()
         priceLbl.attributedText = setPriceLblAttr(price: "13 990", count: 1)
@@ -54,7 +66,7 @@ class DetailProductVC: UIViewController {
         saleLbl.layer.cornerRadius = 10
         saleLbl.transform = CGAffineTransform(rotationAngle: -.pi / 4)
         
-        oldPriceLbl.attributedText = "4500 UZS for 1 pc".strikeThrough()
+        oldPriceLbl.attributedText = "15000 UZS for 1 pc".strikeThrough()
         
         pageController.numberOfPages = imageData.count
         pageController.currentPage = 0
@@ -63,7 +75,7 @@ class DetailProductVC: UIViewController {
     }
     
     @IBAction func plusBtnPressed(_ sender: UIButton) {
-    
+        
         if sender.tag == 10 {
             self.productCount += 1
         }else {
@@ -79,7 +91,11 @@ class DetailProductVC: UIViewController {
     func configureCV(){
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
-        imageCollectionView.register(UINib(nibName: identifierDetailPCVC, bundle: nil), forCellWithReuseIdentifier: identifierDetailPCVC)
+        imageCollectionView.register(UINib(nibName: identifierDetailPImageCVC, bundle: nil), forCellWithReuseIdentifier: identifierDetailPImageCVC)
+        
+        similarCollectionView.delegate = self
+        similarCollectionView.dataSource = self
+        similarCollectionView.register(UINib(nibName: identifierDetailPSimilarCVC, bundle: nil), forCellWithReuseIdentifier: identifierDetailPSimilarCVC)
     }
     
     func showAddToCard(bool: Bool){
@@ -96,7 +112,7 @@ class DetailProductVC: UIViewController {
         let attr = NSMutableAttributedString(string: price, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.systemGreen])
         attr.append(NSAttributedString(string: " UZS for ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .light), NSAttributedString.Key.foregroundColor:UIColor.darkGray]))
         attr.append(NSAttributedString(string: "\(count)", attributes: [NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor:UIColor.black]))
-         attr.append(NSAttributedString(string: " pc", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .light), NSAttributedString.Key.foregroundColor:UIColor.darkGray]))
+        attr.append(NSAttributedString(string: " pc", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .light), NSAttributedString.Key.foregroundColor:UIColor.darkGray]))
         
         return attr
     }
@@ -107,37 +123,69 @@ class DetailProductVC: UIViewController {
 extension DetailProductVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageData.count
+        if collectionView == imageCollectionView{
+            return imageData.count
+        }else if similarCollectionView == collectionView {
+            return similarProductData.count
+        }else{
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierDetailPCVC, for: indexPath) as? DetailProductCVC else {return UICollectionViewCell()}
-        cell.updateView(image: imageData[indexPath.row])        
-        return cell
+        if collectionView == imageCollectionView{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierDetailPImageCVC, for: indexPath) as? DetailProductCVC else {return UICollectionViewCell()}
+            cell.updateView(image: imageData[indexPath.row])
+            return cell
+        }else if similarCollectionView == collectionView {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierDetailPSimilarCVC, for: indexPath) as? Home_ProductCVC else{
+                return UICollectionViewCell()
+            }
+            
+            cell.productImg.image = similarProductData[indexPath.row].image
+                   cell.productName.text = similarProductData[indexPath.row].name
+                   cell.productPriceLbl.text = "\(similarProductData[indexPath.row].price)"
+                   cell.productCurrencyLbl.text = similarProductData[indexPath.row].currecy
+            
+            return cell
+        }
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        if collectionView == imageCollectionView{
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        } else {
+            return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.height)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        pageController.currentPage = indexPath.row
+        if collectionView == imageCollectionView {
+            pageController.currentPage = indexPath.row
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let vc = DetailProductImageVC(collectionViewLayout: layout)
-        vc.modalPresentationStyle = .overFullScreen
-        vc.transitioningDelegate = self
-        vc.imageData = imageData
-        vc.indexPath = indexPath
-        guard let cell = collectionView.cellForItem(at: indexPath) as? DetailProductCVC else {return}
-        imageVCTransion.fromView = cell.productImage
-        present(vc, animated: true, completion: nil)
+        if collectionView == imageCollectionView{
+            
+            let layout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .horizontal
+            let vc = DetailProductImageVC(collectionViewLayout: layout)
+            vc.modalPresentationStyle = .overFullScreen
+            vc.transitioningDelegate = self
+            vc.imageData = imageData
+            vc.indexPath = indexPath
+            guard let cell = collectionView.cellForItem(at: indexPath) as? DetailProductCVC else {return}
+            imageVCTransion.fromView = cell.productImage
+            present(vc, animated: true, completion: nil)
+        }
     }
-    
 }
+
+
+
+
 
 
 extension DetailProductVC: UIViewControllerTransitioningDelegate{
@@ -151,6 +199,7 @@ extension DetailProductVC: UIViewControllerTransitioningDelegate{
         return imageVCTransion
     }
 }
+
 
 extension String {
     func strikeThrough() -> NSAttributedString {

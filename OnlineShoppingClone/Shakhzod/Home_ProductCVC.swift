@@ -15,6 +15,7 @@ class Home_ProductCVC: UICollectionViewCell {
     @IBOutlet weak var productPriceLbl: UILabel!
     @IBOutlet weak var productCurrencyLbl: UILabel!
     @IBOutlet weak var productName: UILabel!
+    
     var productAddBtn: UIButton!
     var numberOfProductsToBuy: Int = 0
     
