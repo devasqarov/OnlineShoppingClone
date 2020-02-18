@@ -224,6 +224,9 @@
                                         <rect key="frame" x="223.5" y="0.0" width="22" height="25"/>
                                         <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="star" catalog="system"/>
+                                        <connections>
+                                            <action selector="starPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Ru-Rj-Mja"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -274,6 +277,7 @@
                 <outlet property="imgView" destination="qfM-mK-510" id="axz-xy-y7I"/>
                 <outlet property="nameOfProductLbl" destination="XZ3-XN-yOa" id="Udk-jf-Lfc"/>
                 <outlet property="pricePCLbl" destination="WyO-aT-odD" id="LrU-fz-0eC"/>
+                <outlet property="starBtn" destination="VbU-f4-SXa" id="Shu-FN-zvU"/>
                 <outlet property="totalPriceLbl" destination="fK8-IM-nah" id="bEX-Yy-E7f"/>
             </connections>
             <point key="canvasLocation" x="-150" y="52"/>
