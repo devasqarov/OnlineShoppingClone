@@ -17,6 +17,7 @@ class Home_SearchTVC: UITableViewCell {
     @IBOutlet weak var prodCurrencyLbl: UILabel!
     @IBOutlet weak var addProdBtn: UIButton!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
      

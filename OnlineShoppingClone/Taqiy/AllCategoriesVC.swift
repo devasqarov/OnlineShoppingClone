@@ -50,7 +50,7 @@ class AllCategoriesVC: UIViewController {
     
 }
 
-
+//MARK: - TableView Methods
 extension AllCategoriesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,6 +10,7 @@ import UIKit
 
 class SideMenuItemTVC: UITableViewCell {
 
+    
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!

@@ -83,6 +83,7 @@ class HomeVC: UIViewController {
     
 }
 
+
 //MARK: Search Controller Configuration
 extension HomeVC: UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate{
     func updateSearchResults(for searchController: UISearchController) {
@@ -99,12 +100,14 @@ extension HomeVC: UISearchControllerDelegate, UISearchResultsUpdating, UISearchB
 
 
 //MARK: TableView Configuration
-extension HomeVC: UITableViewDelegate, UITableViewDataSource{
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     //UITableViewDataSourcePrefetching
+    
     
 //    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
 //        print("for infinite scrolling")
 //    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

@@ -23,8 +23,10 @@ class WelcomeCVCell: UICollectionViewCell {
         imgView.image = data.image
         titleLbl.text = data.title
         subtitleLbl.text = data.subtitle
+        
     }
 }
+
 
 extension WelcomeCVCell {
     // Language change extension

@@ -20,6 +20,7 @@ class LoginVC: UIViewController, SelectedCitySend {
     
 
     
+    
     @IBOutlet weak var confirmMessage: UILabel!
     @IBOutlet weak var phoneTxtField: UITextField!
     
@@ -84,9 +85,11 @@ class LoginVC: UIViewController, SelectedCitySend {
         
         
     }
+    
+    
     @objc func leftBtnPressed() {
         self.dismiss(animated: true, completion: nil)
-       }
+    }
     
     
     
@@ -95,7 +98,6 @@ class LoginVC: UIViewController, SelectedCitySend {
         vc.delegate = self
         let navvc = UINavigationController(rootViewController: vc)
         navvc.modalPresentationStyle = .overFullScreen
-        
         self.present(navvc, animated: true, completion: nil)
         
     }
