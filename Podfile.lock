@@ -1,16 +1,20 @@
 PODS:
+  - AKSideMenu (1.4.5)
   - Alamofire (4.9.1)
 
 DEPENDENCIES:
+  - AKSideMenu
   - Alamofire
 
 SPEC REPOS:
   trunk:
+    - AKSideMenu
     - Alamofire
 
 SPEC CHECKSUMS:
+  AKSideMenu: 2880c44ee04a68f40be783c5cb997b2e0ee22401
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
 
-PODFILE CHECKSUM: e511f96652b3c889a8dbd0becd0a8421f73b3a73
+PODFILE CHECKSUM: 0e094ed7fa88316d117f0424ffec4f3a62c843be
 
 COCOAPODS: 1.8.4

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AKSideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,9 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
+        let navigationController = UINavigationController(rootViewController: HomeVC())
+        let leftMenuViewController = MyNavigationVC(rootViewController: SideMenuVC())
+        let rightMenuViewController = UIViewController()
+        // Create side menu controller
+        let sideMenuViewController: AKSideMenu = AKSideMenu(contentViewController: navigationController, leftMenuViewController: leftMenuViewController, rightMenuViewController: rightMenuViewController)
         
-        window?.rootViewController = UINavigationController(rootViewController: HomeVC(nibName: "HomeVC", bundle: nil))
-
+        window?.rootViewController = sideMenuViewController
+        
         window?.makeKeyAndVisible()
         return true
     }

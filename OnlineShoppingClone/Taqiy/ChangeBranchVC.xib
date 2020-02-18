@@ -23,7 +23,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uXv-B6-Aso">
-                            <rect key="frame" x="0.0" y="40" width="414" height="778"/>
+                            <rect key="frame" x="0.0" y="80" width="414" height="738"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="839-TM-7W4">
                                 <size key="itemSize" width="50" height="50"/>
@@ -32,13 +32,27 @@
                                 <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eo-aK-IM4">
+                            <rect key="frame" x="354" y="35" width="20" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="STr-Q4-DvT"/>
+                                <constraint firstAttribute="width" constant="20" id="rrk-Xt-8Qz"/>
+                            </constraints>
+                            <state key="normal" image="closeThin"/>
+                            <connections>
+                                <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="3z6-UX-gV5"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="uXv-B6-Aso" secondAttribute="trailing" id="1SC-ej-NcN"/>
                         <constraint firstAttribute="bottom" secondItem="uXv-B6-Aso" secondAttribute="bottom" id="Rr1-Gf-rrX"/>
                         <constraint firstItem="uXv-B6-Aso" firstAttribute="leading" secondItem="2Ox-TP-zsg" secondAttribute="leading" id="eh6-MV-Onq"/>
-                        <constraint firstItem="uXv-B6-Aso" firstAttribute="top" secondItem="2Ox-TP-zsg" secondAttribute="top" constant="40" id="j4v-Ja-ung"/>
+                        <constraint firstItem="uXv-B6-Aso" firstAttribute="top" secondItem="5Eo-aK-IM4" secondAttribute="bottom" constant="25" id="gtv-Pz-Dnn"/>
+                        <constraint firstItem="uXv-B6-Aso" firstAttribute="top" secondItem="2Ox-TP-zsg" secondAttribute="top" constant="80" id="j4v-Ja-ung"/>
+                        <constraint firstAttribute="trailing" secondItem="5Eo-aK-IM4" secondAttribute="trailing" constant="40" id="wnd-H7-WFg"/>
                     </constraints>
                 </view>
             </subviews>
@@ -50,7 +64,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Ox-TP-zsg" secondAttribute="bottom" id="h0y-LM-UGg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="132"/>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
         </view>
     </objects>
+    <resources>
+        <image name="closeThin" width="30" height="30"/>
+    </resources>
 </document>

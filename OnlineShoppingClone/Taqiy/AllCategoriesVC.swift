@@ -16,7 +16,6 @@ struct CellData {
 }
 
 class AllCategoriesVC: UIViewController {
-    var bool = false
     var data = [
         CellData(isOpen: false, title: "Vegetables and fruits", items: ["All", "Vegetables", "Fruits", "Greens", "Dried fruits/nuts"], image: #imageLiteral(resourceName: "broccoli")),
         CellData(isOpen: false, title: "Water/beverages", items: ["All", "Juices", "Kvass/mors", "Water", "Carbonated drinks", "Cold drinks"], image: #imageLiteral(resourceName: "water")),
@@ -36,13 +35,11 @@ class AllCategoriesVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        bool = false
         sideMenuViewController?.panGestureEnabled = false
     }
     
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        bool = true
         sideMenuViewController?.setContentViewController(UINavigationController(rootViewController: HomeVC()), animated: true)
         sideMenuViewController?.presentLeftMenuViewController()
     }
