@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmVC" customModule="OnlineShoppingClone" customModuleProvider="target">
+            <connections>
+                <outlet property="phoneLabel" destination="m3i-z3-JKk" id="7gs-fF-Xbb"/>
+                <outlet property="textField" destination="qgU-KV-hKY" id="Tjh-jf-b9G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you a SMS with  the code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMC-Bv-Sh2">
+                    <rect key="frame" x="20" y="150" width="374" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-cS-jAL">
+                    <rect key="frame" x="0.0" y="216.5" width="414" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ziQ-mR-q9S">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-9f-TGB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="2"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="xwm-MQ-4l2"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJx-R7-Fg3">
+                                    <rect key="frame" x="0.0" y="2" width="414" height="66"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the code from SMS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgU-KV-hKY">
+                                            <rect key="frame" x="60" y="0.0" width="294" height="66"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="qgU-KV-hKY" secondAttribute="bottom" id="M4T-MX-9mY"/>
+                                        <constraint firstItem="qgU-KV-hKY" firstAttribute="leading" secondItem="dJx-R7-Fg3" secondAttribute="leading" constant="60" id="mYj-au-fVa"/>
+                                        <constraint firstAttribute="trailing" secondItem="qgU-KV-hKY" secondAttribute="trailing" constant="60" id="vDe-fP-ACL"/>
+                                        <constraint firstItem="qgU-KV-hKY" firstAttribute="top" secondItem="dJx-R7-Fg3" secondAttribute="top" id="vj9-GP-iOv"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDC-wh-USp">
+                                    <rect key="frame" x="0.0" y="68" width="414" height="2"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="MSA-tc-7M2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ziQ-mR-q9S" secondAttribute="bottom" id="4gY-dU-ahW"/>
+                        <constraint firstItem="ziQ-mR-q9S" firstAttribute="top" secondItem="mfQ-cS-jAL" secondAttribute="top" id="Bi0-vC-hPb"/>
+                        <constraint firstAttribute="height" constant="70" id="FvJ-aQ-Dcm"/>
+                        <constraint firstAttribute="trailing" secondItem="ziQ-mR-q9S" secondAttribute="trailing" id="IFQ-cp-Ol1"/>
+                        <constraint firstItem="ziQ-mR-q9S" firstAttribute="leading" secondItem="mfQ-cS-jAL" secondAttribute="leading" id="Y6I-9M-Q37"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+998 906315136" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-z3-JKk">
+                    <rect key="frame" x="20" y="74" width="374" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mfQ-cS-jAL" secondAttribute="trailing" id="613-EU-92L"/>
+                <constraint firstItem="AMC-Bv-Sh2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Gwk-oV-I9v"/>
+                <constraint firstItem="m3i-z3-JKk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Vaa-vZ-tQt"/>
+                <constraint firstItem="mfQ-cS-jAL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hIf-5h-e2w"/>
+                <constraint firstItem="m3i-z3-JKk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="iNB-iv-c27"/>
+                <constraint firstItem="AMC-Bv-Sh2" firstAttribute="top" secondItem="m3i-z3-JKk" secondAttribute="bottom" constant="40" id="iO3-Sb-EA3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AMC-Bv-Sh2" secondAttribute="trailing" constant="20" id="iW1-7J-ZpZ"/>
+                <constraint firstItem="mfQ-cS-jAL" firstAttribute="top" secondItem="AMC-Bv-Sh2" secondAttribute="bottom" constant="40" id="oiC-pi-aVU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m3i-z3-JKk" secondAttribute="trailing" constant="20" id="z4f-Oo-u0f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="127.53623188405798" y="150.66964285714286"/>
+        </view>
+    </objects>
+</document>
