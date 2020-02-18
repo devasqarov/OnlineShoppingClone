@@ -49,6 +49,9 @@
 		87AAD03523F6CE7600C6D353 /* Home_SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AAD03323F6CE7600C6D353 /* Home_SearchVC.xib */; };
 		87AAD03823F6DDC200C6D353 /* Home_SearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AAD03623F6DDC200C6D353 /* Home_SearchTVC.swift */; };
 		87AAD03923F6DDC200C6D353 /* Home_SearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AAD03723F6DDC200C6D353 /* Home_SearchTVC.xib */; };
+		8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39923FC27F100615547 /* AllCategoriesVC.swift */; };
+		8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */; };
+		8DDEB39E23FC27F200615547 /* AllCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */; };
 		F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37023F55B2300680DD9 /* AppDelegate.swift */; };
 		F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37923F55B2500680DD9 /* Assets.xcassets */; };
 		F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */; };
@@ -118,6 +121,9 @@
 		87AAD03323F6CE7600C6D353 /* Home_SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home_SearchVC.xib; sourceTree = "<group>"; };
 		87AAD03623F6DDC200C6D353 /* Home_SearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_SearchTVC.swift; sourceTree = "<group>"; };
 		87AAD03723F6DDC200C6D353 /* Home_SearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home_SearchTVC.xib; sourceTree = "<group>"; };
+		8DDEB39923FC27F100615547 /* AllCategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCategoriesVC.swift; sourceTree = "<group>"; };
+		8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationVC.swift; sourceTree = "<group>"; };
+		8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCategoriesVC.xib; sourceTree = "<group>"; };
 		9165A9340A3603BC2169E201 /* Pods-OnlineShoppingClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineShoppingClone.release.xcconfig"; path = "Target Support Files/Pods-OnlineShoppingClone/Pods-OnlineShoppingClone.release.xcconfig"; sourceTree = "<group>"; };
 		F26DA36D23F55B2300680DD9 /* OnlineShoppingClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShoppingClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26DA37023F55B2300680DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -283,6 +289,9 @@
 		F2E2CD9723FBF84B00F59588 /* Taqiy */ = {
 			isa = PBXGroup;
 			children = (
+				8DDEB39923FC27F100615547 /* AllCategoriesVC.swift */,
+				8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */,
+				8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */,
 				F2E2CDAF23FBF89B00F59588 /* ChangeBranchTVC.swift */,
 				F2E2CDAE23FBF89B00F59588 /* ChangeBranchTVC.xib */,
 				F2E2CDB423FBF89C00F59588 /* ChangeBranchVC.swift */,
@@ -395,6 +404,7 @@
 				04F558B123FC27B5005619AF /* GeneraltableVC.xib in Resources */,
 				04F558A923FC27B5005619AF /* ConfirmVC.xib in Resources */,
 				F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */,
+				8DDEB39E23FC27F200615547 /* AllCategoriesVC.xib in Resources */,
 				F2E2CDA823FBF87800F59588 /* WatchedProductsVC.xib in Resources */,
 				F2E2CDAA23FBF87800F59588 /* FavoriteWatchedTVC.xib in Resources */,
 				2D8CEE1C23F6670500354724 /* (null) in Resources */,
@@ -468,11 +478,13 @@
 				87AAD01423F58FC300C6D353 /* HomeVC.swift in Sources */,
 				04F558B723FC27B5005619AF /* WelcomeDM.swift in Sources */,
 				F2E2CDAC23FBF87800F59588 /* WatchedProductsVC.swift in Sources */,
+				8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */,
 				F2E2CDC623FBF8CA00F59588 /* DetailProductVC.swift in Sources */,
 				F2E2CDBB23FBF89C00F59588 /* DefaultKeys.swift in Sources */,
 				F2E2CDB823FBF89C00F59588 /* ChangeBranchTVC.swift in Sources */,
 				04F558B023FC27B5005619AF /* Lang.swift in Sources */,
 				87AAD02823F661D200C6D353 /* Home_CarouselTVC.swift in Sources */,
+				8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */,
 				F2E2CDBD23FBF89C00F59588 /* ChangeBranchVC.swift in Sources */,
 				F2E2CDB623FBF89C00F59588 /* SideMenuItemTVC.swift in Sources */,
 				87AAD01C23F5CE6700C6D353 /* Home_CarouselCVC.swift in Sources */,

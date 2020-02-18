@@ -26,6 +26,15 @@ class SideMenuVC: UIViewController {
         tableView.register(UINib(nibName: "SideMenuItemTVC", bundle: nil), forCellReuseIdentifier: "SideMenuItemTVC")
         tableView.tableFooterView = UIView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("SIDEMENU DID APPEAR")
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
 
 }
 
@@ -51,6 +60,21 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
         cell.myImage.tintColor = myCellImageColors[indexPath.section][indexPath.row]
         return cell
     }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 && indexPath.row == 1 {
+            let vc = AllCategoriesVC()
+            sideMenuViewController?.setContentViewController(vc, animated: true)
+            sideMenuViewController?.hideMenuViewController()
+        } else if indexPath.section == 0 && indexPath.row == 0 {
+            let vc = ChangeBranchVC()
+            sideMenuViewController?.setContentViewController(vc, animated: true)
+            sideMenuViewController?.hideMenuViewController()
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section != 0 {
