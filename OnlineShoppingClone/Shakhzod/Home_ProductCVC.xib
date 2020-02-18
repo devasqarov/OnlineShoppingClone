@@ -46,19 +46,74 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8t-Py-PYR">
+                                <rect key="frame" x="189" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MrB-jc-h1W"/>
+                                    <constraint firstAttribute="height" constant="40" id="blZ-L7-oFc"/>
+                                </constraints>
+                                <state key="normal" image="circelAddGreen"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aS1-6r-Msm">
+                                <rect key="frame" x="20" y="10" width="209" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eHh-Wa-VbG">
+                                        <rect key="frame" x="20" y="20" width="169" height="10"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRb-zI-bh0">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="10"/>
+                                                <state key="normal" title="asdf">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="met-qZ-Kyz">
+                                                <rect key="frame" x="87" y="0.0" width="42" height="10"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6l-nv-xyn">
+                                                <rect key="frame" x="139" y="0.0" width="30" height="10"/>
+                                                <state key="normal" title="asdf">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eHh-Wa-VbG" firstAttribute="leading" secondItem="aS1-6r-Msm" secondAttribute="leading" constant="20" symbolic="YES" id="AVp-XW-AXv"/>
+                                    <constraint firstAttribute="height" constant="50" id="JAH-i8-c5r"/>
+                                    <constraint firstAttribute="bottom" secondItem="eHh-Wa-VbG" secondAttribute="bottom" constant="20" symbolic="YES" id="gc5-Kd-Prm"/>
+                                    <constraint firstItem="eHh-Wa-VbG" firstAttribute="top" secondItem="aS1-6r-Msm" secondAttribute="top" constant="20" symbolic="YES" id="gvE-i8-qGI"/>
+                                    <constraint firstAttribute="trailing" secondItem="eHh-Wa-VbG" secondAttribute="trailing" constant="20" symbolic="YES" id="xu7-en-Mtf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n8t-Py-PYR" secondAttribute="trailing" constant="20" id="8C2-oS-Cvd"/>
+                            <constraint firstAttribute="trailing" secondItem="aS1-6r-Msm" secondAttribute="trailing" constant="20" id="AVs-2f-utR"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Zp-5R-rXi" secondAttribute="bottom" constant="10" id="Cjf-Ra-mXt"/>
                             <constraint firstItem="2Zp-5R-rXi" firstAttribute="top" secondItem="P7g-XJ-tNa" secondAttribute="bottom" constant="5" id="Clk-O6-TST"/>
                             <constraint firstItem="P7g-XJ-tNa" firstAttribute="leading" secondItem="cIW-dj-9Qg" secondAttribute="leading" id="OeG-gw-Kam"/>
                             <constraint firstAttribute="trailing" secondItem="cIW-dj-9Qg" secondAttribute="trailing" constant="20" id="Plf-oD-iRV"/>
+                            <constraint firstItem="aS1-6r-Msm" firstAttribute="leading" secondItem="xOx-bD-LM0" secondAttribute="leading" constant="20" id="WfA-bH-VMi"/>
                             <constraint firstItem="cIW-dj-9Qg" firstAttribute="top" secondItem="xOx-bD-LM0" secondAttribute="top" constant="10" id="Wzo-Tb-9WT"/>
                             <constraint firstItem="2Zp-5R-rXi" firstAttribute="leading" secondItem="cIW-dj-9Qg" secondAttribute="leading" id="Xeh-FX-p7D"/>
                             <constraint firstItem="2Zp-5R-rXi" firstAttribute="trailing" secondItem="cIW-dj-9Qg" secondAttribute="trailing" id="Xzp-Yc-yfN"/>
                             <constraint firstItem="cIW-dj-9Qg" firstAttribute="height" secondItem="xOx-bD-LM0" secondAttribute="height" multiplier="1:2" constant="20" id="ZQQ-GY-DT9"/>
+                            <constraint firstItem="aS1-6r-Msm" firstAttribute="top" secondItem="xOx-bD-LM0" secondAttribute="top" constant="10" id="cVZ-ba-rdg"/>
                             <constraint firstItem="P7g-XJ-tNa" firstAttribute="top" secondItem="cIW-dj-9Qg" secondAttribute="bottom" constant="5" id="egf-9o-Q6Z"/>
+                            <constraint firstItem="aS1-6r-Msm" firstAttribute="width" secondItem="cIW-dj-9Qg" secondAttribute="width" id="hek-84-Nwa"/>
                             <constraint firstItem="cIW-dj-9Qg" firstAttribute="leading" secondItem="xOx-bD-LM0" secondAttribute="leading" constant="20" id="hrd-3I-L5j"/>
+                            <constraint firstItem="n8t-Py-PYR" firstAttribute="top" secondItem="xOx-bD-LM0" secondAttribute="top" constant="20" id="xsS-np-yMW"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -78,7 +133,10 @@
                 <outlet property="productName" destination="2Zp-5R-rXi" id="NUW-t8-R4M"/>
                 <outlet property="productPriceLbl" destination="X6K-4U-jlM" id="BfB-rp-Vem"/>
             </connections>
-            <point key="canvasLocation" x="244.20289855072465" y="31.473214285714285"/>
+            <point key="canvasLocation" x="381.8840579710145" y="-24.107142857142858"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="circelAddGreen" width="128" height="128"/>
+    </resources>
 </document>

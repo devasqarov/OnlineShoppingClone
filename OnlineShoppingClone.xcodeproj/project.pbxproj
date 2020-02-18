@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F558A623FC27B5005619AF /* WelcomeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589423FC27B4005619AF /* WelcomeCVCell.swift */; };
+		04F558A723FC27B5005619AF /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589523FC27B4005619AF /* LoginVC.xib */; };
+		04F558A823FC27B5005619AF /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589623FC27B4005619AF /* WelcomeVC.xib */; };
+		04F558A923FC27B5005619AF /* ConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589723FC27B4005619AF /* ConfirmVC.xib */; };
+		04F558AA23FC27B5005619AF /* CityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589823FC27B4005619AF /* CityTableCell.xib */; };
+		04F558AB23FC27B5005619AF /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589923FC27B4005619AF /* ConfirmVC.swift */; };
+		04F558AC23FC27B5005619AF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589A23FC27B4005619AF /* LoginVC.swift */; };
+		04F558AD23FC27B5005619AF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589B23FC27B4005619AF /* Defaults.swift */; };
+		04F558AE23FC27B5005619AF /* CityTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589C23FC27B4005619AF /* CityTableVC.xib */; };
+		04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589D23FC27B4005619AF /* CityTableCell.swift */; };
+		04F558B023FC27B5005619AF /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589E23FC27B5005619AF /* Lang.swift */; };
+		04F558B123FC27B5005619AF /* GeneraltableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589F23FC27B5005619AF /* GeneraltableVC.xib */; };
+		04F558B223FC27B5005619AF /* WelcomeCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F558A023FC27B5005619AF /* WelcomeCVCell.xib */; };
+		04F558B323FC27B5005619AF /* CityTableDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A123FC27B5005619AF /* CityTableDM.swift */; };
+		04F558B423FC27B5005619AF /* CityTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A223FC27B5005619AF /* CityTableVC.swift */; };
+		04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A323FC27B5005619AF /* GeneraltableVC.swift */; };
+		04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A423FC27B5005619AF /* WelcomeVC.swift */; };
+		04F558B723FC27B5005619AF /* WelcomeDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A523FC27B5005619AF /* WelcomeDM.swift */; };
 		2D8CEE0823F5940800354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2D8CEE0C23F594DD00354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2D8CEE1423F5965D00354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -66,6 +84,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04F5589423FC27B4005619AF /* WelcomeCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeCVCell.swift; sourceTree = "<group>"; };
+		04F5589523FC27B4005619AF /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		04F5589623FC27B4005619AF /* WelcomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
+		04F5589723FC27B4005619AF /* ConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmVC.xib; sourceTree = "<group>"; };
+		04F5589823FC27B4005619AF /* CityTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableCell.xib; sourceTree = "<group>"; };
+		04F5589923FC27B4005619AF /* ConfirmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
+		04F5589A23FC27B4005619AF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		04F5589B23FC27B4005619AF /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		04F5589C23FC27B4005619AF /* CityTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableVC.xib; sourceTree = "<group>"; };
+		04F5589D23FC27B4005619AF /* CityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableCell.swift; sourceTree = "<group>"; };
+		04F5589E23FC27B5005619AF /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
+		04F5589F23FC27B5005619AF /* GeneraltableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneraltableVC.xib; sourceTree = "<group>"; };
+		04F558A023FC27B5005619AF /* WelcomeCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeCVCell.xib; sourceTree = "<group>"; };
+		04F558A123FC27B5005619AF /* CityTableDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableDM.swift; sourceTree = "<group>"; };
+		04F558A223FC27B5005619AF /* CityTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableVC.swift; sourceTree = "<group>"; };
+		04F558A323FC27B5005619AF /* GeneraltableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneraltableVC.swift; sourceTree = "<group>"; };
+		04F558A423FC27B5005619AF /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		04F558A523FC27B5005619AF /* WelcomeDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeDM.swift; sourceTree = "<group>"; };
 		151F3E10BD00120DFF0F122A /* Pods_OnlineShoppingClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShoppingClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AAD01223F58FC300C6D353 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		87AAD01323F58FC300C6D353 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
@@ -135,6 +171,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04F5589323FC26DF005619AF /* Aziyza */ = {
+			isa = PBXGroup;
+			children = (
+				04F5589D23FC27B4005619AF /* CityTableCell.swift */,
+				04F5589823FC27B4005619AF /* CityTableCell.xib */,
+				04F558A123FC27B5005619AF /* CityTableDM.swift */,
+				04F558A223FC27B5005619AF /* CityTableVC.swift */,
+				04F5589C23FC27B4005619AF /* CityTableVC.xib */,
+				04F5589923FC27B4005619AF /* ConfirmVC.swift */,
+				04F5589723FC27B4005619AF /* ConfirmVC.xib */,
+				04F5589B23FC27B4005619AF /* Defaults.swift */,
+				04F558A323FC27B5005619AF /* GeneraltableVC.swift */,
+				04F5589F23FC27B5005619AF /* GeneraltableVC.xib */,
+				04F5589E23FC27B5005619AF /* Lang.swift */,
+				04F5589A23FC27B4005619AF /* LoginVC.swift */,
+				04F5589523FC27B4005619AF /* LoginVC.xib */,
+				04F5589423FC27B4005619AF /* WelcomeCVCell.swift */,
+				04F558A023FC27B5005619AF /* WelcomeCVCell.xib */,
+				04F558A523FC27B5005619AF /* WelcomeDM.swift */,
+				04F558A423FC27B5005619AF /* WelcomeVC.swift */,
+				04F5589623FC27B4005619AF /* WelcomeVC.xib */,
+			);
+			path = Aziyza;
+			sourceTree = "<group>";
+		};
 		1449791B736CC4CF63105153 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +259,7 @@
 		F26DA36F23F55B2300680DD9 /* OnlineShoppingClone */ = {
 			isa = PBXGroup;
 			children = (
+				04F5589323FC26DF005619AF /* Aziyza */,
 				F2E2CD9823FBF85200F59588 /* Rahmatillo */,
 				F2E2CD9723FBF84B00F59588 /* Taqiy */,
 				F2E2CD9623FBF84300F59588 /* Eldor */,
@@ -334,7 +396,13 @@
 				87AAD03923F6DDC200C6D353 /* Home_SearchTVC.xib in Resources */,
 				F2E2CDC823FBF8CA00F59588 /* DetailProductCVC.xib in Resources */,
 				87AAD03123F684CC00C6D353 /* Home_CarouselVC_CVC.xib in Resources */,
+				04F558A723FC27B5005619AF /* LoginVC.xib in Resources */,
+				04F558B223FC27B5005619AF /* WelcomeCVCell.xib in Resources */,
 				F2E2CDB723FBF89C00F59588 /* ChangeBranchTVC.xib in Resources */,
+				04F558A823FC27B5005619AF /* WelcomeVC.xib in Resources */,
+				04F558AA23FC27B5005619AF /* CityTableCell.xib in Resources */,
+				04F558B123FC27B5005619AF /* GeneraltableVC.xib in Resources */,
+				04F558A923FC27B5005619AF /* ConfirmVC.xib in Resources */,
 				F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */,
 				8DDEB39E23FC27F200615547 /* AllCategoriesVC.xib in Resources */,
 				F2E2CDA823FBF87800F59588 /* WatchedProductsVC.xib in Resources */,
@@ -343,6 +411,7 @@
 				2D8CEE0823F5940800354724 /* (null) in Resources */,
 				F2E2CDB923FBF89C00F59588 /* SideMenuItemTVC.xib in Resources */,
 				2D8CEE1423F5965D00354724 /* (null) in Resources */,
+				04F558AE23FC27B5005619AF /* CityTableVC.xib in Resources */,
 				F2E2CDA923FBF87800F59588 /* FavoriteProductsVC.xib in Resources */,
 				2D8CEE0C23F594DD00354724 /* (null) in Resources */,
 				F2E2CDBE23FBF89C00F59588 /* SideMenuVC.xib in Resources */,
@@ -402,14 +471,18 @@
 			files = (
 				F2E2CDCC23FBF8CA00F59588 /* DetailProductCVC.swift in Sources */,
 				87AAD01823F5CDDA00C6D353 /* Home_CategoriesTVC.swift in Sources */,
+				04F558AC23FC27B5005619AF /* LoginVC.swift in Sources */,
 				F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */,
+				04F558AB23FC27B5005619AF /* ConfirmVC.swift in Sources */,
 				87AAD02023F5D96900C6D353 /* Home_ProductCVC.swift in Sources */,
 				87AAD01423F58FC300C6D353 /* HomeVC.swift in Sources */,
+				04F558B723FC27B5005619AF /* WelcomeDM.swift in Sources */,
 				F2E2CDAC23FBF87800F59588 /* WatchedProductsVC.swift in Sources */,
 				8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */,
 				F2E2CDC623FBF8CA00F59588 /* DetailProductVC.swift in Sources */,
 				F2E2CDBB23FBF89C00F59588 /* DefaultKeys.swift in Sources */,
 				F2E2CDB823FBF89C00F59588 /* ChangeBranchTVC.swift in Sources */,
+				04F558B023FC27B5005619AF /* Lang.swift in Sources */,
 				87AAD02823F661D200C6D353 /* Home_CarouselTVC.swift in Sources */,
 				8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */,
 				F2E2CDBD23FBF89C00F59588 /* ChangeBranchVC.swift in Sources */,
@@ -417,15 +490,22 @@
 				87AAD01C23F5CE6700C6D353 /* Home_CarouselCVC.swift in Sources */,
 				87AAD03023F684CC00C6D353 /* Home_CarouselVC_CVC.swift in Sources */,
 				F2E2CDC723FBF8CA00F59588 /* CustomNotification.swift in Sources */,
+				04F558A623FC27B5005619AF /* WelcomeCVCell.swift in Sources */,
 				87AAD03423F6CE7600C6D353 /* Home_SearchVC.swift in Sources */,
 				F2E2CDC923FBF8CA00F59588 /* CustomTransitionAnimation.swift in Sources */,
 				F2E2CDBC23FBF89C00F59588 /* SideMenuVC.swift in Sources */,
 				F2E2CDA423FBF87800F59588 /* FavoriteWatchedTVC.swift in Sources */,
 				87AAD03823F6DDC200C6D353 /* Home_SearchTVC.swift in Sources */,
+				04F558B423FC27B5005619AF /* CityTableVC.swift in Sources */,
 				F2E2CDAB23FBF87800F59588 /* FavoriteProductsVC.swift in Sources */,
+				04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */,
 				F2E2CDA323FBF87800F59588 /* FAQVC.swift in Sources */,
 				F2E2CDCB23FBF8CA00F59588 /* DetailProductImageVC.swift in Sources */,
+				04F558AD23FC27B5005619AF /* Defaults.swift in Sources */,
+				04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */,
+				04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */,
 				87AAD02C23F67DFA00C6D353 /* Home_CarouselVC.swift in Sources */,
+				04F558B323FC27B5005619AF /* CityTableDM.swift in Sources */,
 				F2E2CDA523FBF87800F59588 /* PublicOfferVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

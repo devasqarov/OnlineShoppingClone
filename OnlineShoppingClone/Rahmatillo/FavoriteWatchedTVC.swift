@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+protocol DidStarSelectedProtocol {
+    func didStarSelected()
+}
 class FavoriteWatchedTVC: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameOfProductLbl: UILabel!
@@ -19,9 +21,12 @@ class FavoriteWatchedTVC: UITableViewCell {
     @IBOutlet weak var pricePCLbl: UILabel!
     @IBOutlet weak var totalPriceLbl: UILabel!
     
+    @IBOutlet weak var starBtn: UIButton!
     
     var count = 1
     var isViewHidden: Bool = false
+    
+    var starSelectDelegate : DidStarSelectedProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,6 +44,14 @@ class FavoriteWatchedTVC: UITableViewCell {
         totalPriceLbl.text = pricePCLbl.text
         countOfProductLbl.text = "\(count)"
     }
+    
+//    func updateCell(with data: SomeDM){
+//        if data.isFavorite{
+//            starBtn.setImage(UIImage(systemName: "star.fill"), for: .normal)
+//        }else{
+//            starBtn.setImage(UIImage(systemName: "star"), for: .normal)
+//        }
+//    }
     
     @IBAction func plusPressed(_ sender: UIButton) {
         count += 1
@@ -69,4 +82,17 @@ class FavoriteWatchedTVC: UITableViewCell {
         addView.isHidden = !isViewHidden
     }
     
+    @IBAction func starPressed(_ sender: UIButton) {
+        if #available(iOS 13.0, *) {
+            if sender.currentImage == UIImage(systemName: "star.fill"){
+                sender.setImage(UIImage(systemName: "star"), for: .normal)
+            }else{
+                sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            }
+        } else {
+            
+        }
+        
+        starSelectDelegate?.didStarSelected()
+    }
 }
