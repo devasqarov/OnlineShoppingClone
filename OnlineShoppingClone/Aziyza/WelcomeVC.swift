@@ -28,6 +28,8 @@ class WelcomeVC: UIViewController {
         setUpCollectionView()
         setUpBarButton()
         updateLabel()
+        
+    
     }
     
     func setUpBarButton() {
@@ -81,6 +83,33 @@ extension WelcomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            self.view.viewWithTag(1)?.backgroundColor = .black
+            self.view.viewWithTag(10)?.backgroundColor = .black
+            self.view.viewWithTag(2)?.backgroundColor = .white
+            self.view.viewWithTag(20)?.backgroundColor = .white
+            self.view.viewWithTag(30)?.backgroundColor = .white
+            self.view.viewWithTag(3)?.backgroundColor = .white
+
+        } else if indexPath.row == 1 {
+            self.view.viewWithTag(2)?.backgroundColor = .black
+            self.view.viewWithTag(20)?.backgroundColor = .black
+            self.view.viewWithTag(1)?.backgroundColor = .white
+            self.view.viewWithTag(3)?.backgroundColor = .white
+            self.view.viewWithTag(10)?.backgroundColor = .white
+            self.view.viewWithTag(30)?.backgroundColor = .white
+
+        } else if indexPath.row == 2 {
+            self.view.viewWithTag(3)?.backgroundColor = .black
+            self.view.viewWithTag(30)?.backgroundColor = .black
+            self.view.viewWithTag(10)?.backgroundColor = .white
+            self.view.viewWithTag(20)?.backgroundColor = .white
+            self.view.viewWithTag(1)?.backgroundColor = .white
+            self.view.viewWithTag(2)?.backgroundColor = .white
+
+        }
+
         if indexPath.row == data.count-1 {
             nextBtn.setTitle("Login", for: .normal)
         }
