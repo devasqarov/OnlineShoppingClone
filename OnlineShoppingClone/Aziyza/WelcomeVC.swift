@@ -13,12 +13,14 @@ class WelcomeVC: UIViewController {
 
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var rigthBarBtn: UIBarButtonItem!
     var data:[WelcomeDM] = [
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeFirst"), title: "A large assortment", subtitle: "Large range with your favourite networks"),
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeSecond"), title: "Save time", subtitle: "Now you do not need to visit hypermarkets, we will do it for you"),
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeThird"), title: "Fast delivery", subtitle: "Delivery at a convenient time for you")
     ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,7 +122,7 @@ extension WelcomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
 }
 
-extension WelcomeVC{
+extension WelcomeVC {
     
     // Language change of strings
     @objc func updateLabel() {

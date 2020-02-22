@@ -9,7 +9,7 @@
 import UIKit
 
 struct Home_Product{
-    var name: String = "Potato, weight"
+    var name: String = "Potato, weight,Potato, weightPotato, weightPotato, weightPotato, weight"
     var price: Int = 9999
     var currecy: String = "UZS"
     var discount: String = "10%"

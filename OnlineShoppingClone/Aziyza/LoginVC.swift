@@ -17,6 +17,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, SelectedCitySend  {
 
     }
     
+
     @IBOutlet weak var confirmMessage: UILabel!
     @IBOutlet weak var phoneTxtField: UITextField!
     
@@ -76,10 +77,11 @@ class LoginVC: UIViewController, UITextFieldDelegate, SelectedCitySend  {
         }
 
     }
+    
+    
     @objc func leftBtnPressed() {
         self.dismiss(animated: true, completion: nil)
-       }
- 
+
     @IBAction func chooseCityBtnPressed(_ sender: UIButton) {
         let vc = CityTableVC(nibName: "CityTableVC", bundle: nil)
         vc.delegate = self

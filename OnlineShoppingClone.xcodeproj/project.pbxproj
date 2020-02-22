@@ -55,6 +55,7 @@
 		8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39923FC27F100615547 /* AllCategoriesVC.swift */; };
 		8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */; };
 		8DDEB39E23FC27F200615547 /* AllCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */; };
+		F269DDBC23FC431F00E0687C /* NavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269DDBB23FC431F00E0687C /* NavigationTransition.swift */; };
 		F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37023F55B2300680DD9 /* AppDelegate.swift */; };
 		F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37923F55B2500680DD9 /* Assets.xcassets */; };
 		F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */; };
@@ -130,6 +131,7 @@
 		8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationVC.swift; sourceTree = "<group>"; };
 		8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCategoriesVC.xib; sourceTree = "<group>"; };
 		9165A9340A3603BC2169E201 /* Pods-OnlineShoppingClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineShoppingClone.release.xcconfig"; path = "Target Support Files/Pods-OnlineShoppingClone/Pods-OnlineShoppingClone.release.xcconfig"; sourceTree = "<group>"; };
+		F269DDBB23FC431F00E0687C /* NavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransition.swift; sourceTree = "<group>"; };
 		F26DA36D23F55B2300680DD9 /* OnlineShoppingClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShoppingClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26DA37023F55B2300680DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26DA37923F55B2500680DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				F26DA37923F55B2500680DD9 /* Assets.xcassets */,
 				F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */,
 				F26DA37E23F55B2500680DD9 /* Info.plist */,
+				F269DDBB23FC431F00E0687C /* NavigationTransition.swift */,
 			);
 			path = OnlineShoppingClone;
 			sourceTree = "<group>";
@@ -507,8 +510,10 @@
 				F2E2CDAB23FBF87800F59588 /* FavoriteProductsVC.swift in Sources */,
 				04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */,
 				F2E2CDA323FBF87800F59588 /* FAQVC.swift in Sources */,
+				F269DDBC23FC431F00E0687C /* NavigationTransition.swift in Sources */,
 				F2E2CDCB23FBF8CA00F59588 /* DetailProductImageVC.swift in Sources */,
 				04F558BA23FD2BE7005619AF /* CitySearchVC.swift in Sources */,
+
 				04F558AD23FC27B5005619AF /* DefaultKeys.swift in Sources */,
 				04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */,
 				04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */,
