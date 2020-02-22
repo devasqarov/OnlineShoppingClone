@@ -189,6 +189,9 @@
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="minusPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iEG-B0-TT2"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kak-g4-Iy4">
                                                         <rect key="frame" x="35.5" y="0.0" width="36" height="25"/>
@@ -202,6 +205,9 @@
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="plusPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6oj-dY-rII"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -264,9 +270,13 @@
                 <outlet property="addToCartView" destination="t7Y-c0-blp" id="dqG-st-2jK"/>
                 <outlet property="addView" destination="U5E-PG-SZP" id="9bF-Gd-Lad"/>
                 <outlet property="backView" destination="9XS-gm-jym" id="B1h-Ab-baP"/>
+                <outlet property="countOfProductLbl" destination="kak-g4-Iy4" id="AGe-YA-Q3Y"/>
                 <outlet property="imgView" destination="qfM-mK-510" id="axz-xy-y7I"/>
+                <outlet property="nameOfProductLbl" destination="XZ3-XN-yOa" id="Udk-jf-Lfc"/>
+                <outlet property="pricePCLbl" destination="WyO-aT-odD" id="LrU-fz-0eC"/>
+                <outlet property="totalPriceLbl" destination="fK8-IM-nah" id="bEX-Yy-E7f"/>
             </connections>
-            <point key="canvasLocation" x="316.66666666666669" y="111.83035714285714"/>
+            <point key="canvasLocation" x="-150" y="52"/>
         </tableViewCell>
     </objects>
     <resources>

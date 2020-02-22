@@ -13,6 +13,7 @@ class FAQVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate{
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         webView.navigationDelegate = self
         
