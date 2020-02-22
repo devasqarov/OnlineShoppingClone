@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  OnlineShoppingClone
-//
-//  Created by Nodirbek Asqarov on 2/13/20.
-//  Copyright © 2020 Nodirbek Asqarov. All rights reserved.
-//
+
 
 import UIKit
 
