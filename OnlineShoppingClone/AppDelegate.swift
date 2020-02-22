@@ -17,15 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        let navigationController = UINavigationController(rootViewController: HomeVC())
-        let leftMenuViewController = MyNavigationVC(rootViewController: SideMenuVC())
-        let rightMenuViewController = UIViewController()
-        // Create side menu controller
-        let sideMenuViewController: AKSideMenu = AKSideMenu(contentViewController: navigationController, leftMenuViewController: leftMenuViewController, rightMenuViewController: rightMenuViewController)
+        let vc = UINavigationController(rootViewController: WelcomeVC(nibName: "WelcomeVC", bundle: nil))
         
-        window?.rootViewController = sideMenuViewController
-
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
+        
+        if let _ = UserDefaults.standard.string(forKey: DefaultKeys.LANG_KEY) {
+        } else {
+            UserDefaults.standard.set("en", forKey: DefaultKeys.LANG_KEY)
+        }
         return true
     }
 

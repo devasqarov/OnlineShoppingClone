@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmVC" customModule="OnlineShoppingClone" customModuleProvider="target">
             <connections>
                 <outlet property="phoneLabel" destination="m3i-z3-JKk" id="7gs-fF-Xbb"/>
+                <outlet property="placeholderLabel" destination="nMp-iK-DUi" id="fj8-tg-3Hv"/>
                 <outlet property="textField" destination="qgU-KV-hKY" id="Tjh-jf-b9G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,17 +43,29 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJx-R7-Fg3">
                                     <rect key="frame" x="0.0" y="2" width="414" height="66"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the code from SMS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgU-KV-hKY">
-                                            <rect key="frame" x="60" y="0.0" width="294" height="66"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgU-KV-hKY">
+                                            <rect key="frame" x="150" y="0.0" width="144" height="66"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="txtfieldDragInside:" destination="-1" eventType="touchDragInside" id="NhP-TR-MDs"/>
+                                                <action selector="txtfieldEdittingChanged:" destination="-1" eventType="editingChanged" id="Vxq-7f-OQr"/>
+                                            </connections>
                                         </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code from SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMp-iK-DUi">
+                                            <rect key="frame" x="83.5" y="19.5" width="247.5" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <color key="textColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="qgU-KV-hKY" secondAttribute="bottom" id="M4T-MX-9mY"/>
-                                        <constraint firstItem="qgU-KV-hKY" firstAttribute="leading" secondItem="dJx-R7-Fg3" secondAttribute="leading" constant="60" id="mYj-au-fVa"/>
-                                        <constraint firstAttribute="trailing" secondItem="qgU-KV-hKY" secondAttribute="trailing" constant="60" id="vDe-fP-ACL"/>
+                                        <constraint firstItem="nMp-iK-DUi" firstAttribute="centerX" secondItem="dJx-R7-Fg3" secondAttribute="centerX" id="Ml0-xZ-PxM"/>
+                                        <constraint firstItem="nMp-iK-DUi" firstAttribute="centerY" secondItem="dJx-R7-Fg3" secondAttribute="centerY" id="exD-Uc-d1y"/>
+                                        <constraint firstItem="qgU-KV-hKY" firstAttribute="leading" secondItem="dJx-R7-Fg3" secondAttribute="leading" constant="150" id="mYj-au-fVa"/>
+                                        <constraint firstAttribute="trailing" secondItem="qgU-KV-hKY" secondAttribute="trailing" constant="120" id="vDe-fP-ACL"/>
                                         <constraint firstItem="qgU-KV-hKY" firstAttribute="top" secondItem="dJx-R7-Fg3" secondAttribute="top" id="vj9-GP-iOv"/>
                                     </constraints>
                                 </view>
