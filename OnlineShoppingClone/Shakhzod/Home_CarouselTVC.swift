@@ -11,8 +11,6 @@ protocol slideNum {
 
 import UIKit
 
-
-
 class Home_CarouselTVC: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!

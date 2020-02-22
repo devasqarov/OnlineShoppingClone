@@ -11,6 +11,8 @@
 import UIKit
 
 class ChangeBranchVC: UIViewController {
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var selectedSet = 0
     
@@ -25,21 +27,22 @@ class ChangeBranchVC: UIViewController {
         sideMenuViewController?.panGestureEnabled = true
     }
     
-    
-    func selectView() -> UIImageView{
-        let selectedSet = UIImageView(frame: CGRect(x: view.frame.width/2-70, y: view.frame.width/2-80, width: 30, height: 30))
-        selectedSet.clipsToBounds = true
-        selectedSet.contentMode = .scaleAspectFill
-        selectedSet.image = UIImage(named: "correct")
-        selectedSet.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        selectedSet.tag = 10
-        return selectedSet
-    }
+    #warning("Delete it")
+//    func selectView() -> UIImageView {
+//        let selectedSet = UIImageView(frame: CGRect(x: view.frame.width/2-70, y: view.frame.width/2-80, width: 30, height: 30))
+//        selectedSet.clipsToBounds = true
+//        selectedSet.contentMode = .scaleAspectFill
+//        selectedSet.image = UIImage(named: "correct")
+//        selectedSet.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+//        selectedSet.tag = 10
+//        return selectedSet
+//    }
     
     @IBAction func cancelBtnPressed(_ sender: Any) {
         sideMenuViewController?.setContentViewController(UINavigationController(rootViewController: HomeVC()), animated: true)
         sideMenuViewController?.presentLeftMenuViewController()
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         sideMenuViewController?.panGestureEnabled = true
@@ -63,6 +66,7 @@ extension ChangeBranchVC: UICollectionViewDelegateFlowLayout, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChangeBranchTVC", for: indexPath) as! ChangeBranchTVC
+        
         cell.setCorners(radius: (cell.frame.width-20)/2)
         
         if self.selectedSet == indexPath.item {

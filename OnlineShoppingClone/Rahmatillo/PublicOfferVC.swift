@@ -12,6 +12,7 @@ import WebKit
 class PublicOfferVC: UIViewController, WKNavigationDelegate, UIWebViewDelegate {
 
     @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self
