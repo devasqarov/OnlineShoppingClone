@@ -8,6 +8,4 @@
 
 import Foundation
 
-struct DefaultKeys {
-    static var LANG_KEY = "langUserDefaults"
-}
+

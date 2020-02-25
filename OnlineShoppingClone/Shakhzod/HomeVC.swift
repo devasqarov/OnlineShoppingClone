@@ -23,27 +23,39 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupNavCont()
+    
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(self.navigationController!.navigationBar.frame.height)
+        self.navigationController?.navigationBar.layoutIfNeeded()
+        
+    }
+    
     func setupNavCont(){
         self.navigationController!.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor  = #colorLiteral(red: 0, green: 0.7190286517, blue: 0.2693060637, alpha: 1)
-       
-        showBarBtns()
+        self.navigationController?.navigationBar.barTintColor  = #colorLiteral(red: 0.04300250858, green: 0.5516898036, blue: 0.267576158, alpha: 1)
         
+        showBarBtns()
+
+       
         self.searchController = UISearchController(searchResultsController: Home_SearchVC(nibName: "Home_SearchVC", bundle: nil))
+        self.searchController.searchBar.translatesAutoresizingMaskIntoConstraints = false
+        self.searchController.searchBar.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        print(self.searchController.searchBar.frame.height)
+        self.searchController.searchBar.layoutIfNeeded()
         self.searchController.searchResultsUpdater = self
         self.searchController.delegate = self
         self.searchController.searchBar.delegate = self
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = true
         self.searchController.searchBar.isTranslucent = false
-        self.searchController.searchBar.barTintColor = .red
         searchController.searchBar.searchTextField.backgroundColor = .white
         self.searchController.searchBar.placeholder = "Search products"
-        UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = .white
         
-        self.navigationItem.titleView = searchController.searchBar
+    UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = .white
+        
+        //self.navigationItem.titleView = searchController.searchBar
         self.definesPresentationContext = true
     }
     
@@ -73,7 +85,6 @@ class HomeVC: UIViewController {
     func setupViews(){
         
         tableView.dataSource = self
-       // tableView.prefetchDataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "Home_CategoriesTVC", bundle: nil), forCellReuseIdentifier: "Home_CategoriesTVC")
         tableView.register(UINib(nibName: "Home_CarouselTVC", bundle: nil), forCellReuseIdentifier: "Home_CarouselTVC")
@@ -127,7 +138,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
-            return CGFloat(self.view.frame.height/2.5)
+            return UIScreen.main.bounds.width/3*2+15
         }else{
             return CGFloat(self.view.frame.height/2.3)
         }

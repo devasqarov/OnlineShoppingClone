@@ -10,4 +10,5 @@ import Foundation
 
 struct DefaultKeys {
     static let SELECTED_SET_DEF_KEY = "selectedSet"
+    static var LANG_KEY = "langUserDefaults"
 }
