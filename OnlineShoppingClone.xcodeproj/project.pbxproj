@@ -14,7 +14,6 @@
 		04F558AA23FC27B5005619AF /* CityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589823FC27B4005619AF /* CityTableCell.xib */; };
 		04F558AB23FC27B5005619AF /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589923FC27B4005619AF /* ConfirmVC.swift */; };
 		04F558AC23FC27B5005619AF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589A23FC27B4005619AF /* LoginVC.swift */; };
-		04F558AD23FC27B5005619AF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589B23FC27B4005619AF /* Defaults.swift */; };
 		04F558AE23FC27B5005619AF /* CityTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589C23FC27B4005619AF /* CityTableVC.xib */; };
 		04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589D23FC27B4005619AF /* CityTableCell.swift */; };
 		04F558B023FC27B5005619AF /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589E23FC27B5005619AF /* Lang.swift */; };
@@ -70,7 +69,6 @@
 		F2E2CDB823FBF89C00F59588 /* ChangeBranchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2CDAF23FBF89B00F59588 /* ChangeBranchTVC.swift */; };
 		F2E2CDB923FBF89C00F59588 /* SideMenuItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E2CDB023FBF89B00F59588 /* SideMenuItemTVC.xib */; };
 		F2E2CDBA23FBF89C00F59588 /* ChangeBranchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E2CDB123FBF89B00F59588 /* ChangeBranchVC.xib */; };
-		F2E2CDBB23FBF89C00F59588 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2CDB223FBF89B00F59588 /* DefaultKeys.swift */; };
 		F2E2CDBC23FBF89C00F59588 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2CDB323FBF89B00F59588 /* SideMenuVC.swift */; };
 		F2E2CDBD23FBF89C00F59588 /* ChangeBranchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2CDB423FBF89C00F59588 /* ChangeBranchVC.swift */; };
 		F2E2CDBE23FBF89C00F59588 /* SideMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E2CDB523FBF89C00F59588 /* SideMenuVC.xib */; };
@@ -91,7 +89,6 @@
 		04F5589823FC27B4005619AF /* CityTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableCell.xib; sourceTree = "<group>"; };
 		04F5589923FC27B4005619AF /* ConfirmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
 		04F5589A23FC27B4005619AF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		04F5589B23FC27B4005619AF /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		04F5589C23FC27B4005619AF /* CityTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableVC.xib; sourceTree = "<group>"; };
 		04F5589D23FC27B4005619AF /* CityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableCell.swift; sourceTree = "<group>"; };
 		04F5589E23FC27B5005619AF /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
@@ -145,7 +142,6 @@
 		F2E2CDAF23FBF89B00F59588 /* ChangeBranchTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeBranchTVC.swift; sourceTree = "<group>"; };
 		F2E2CDB023FBF89B00F59588 /* SideMenuItemTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuItemTVC.xib; sourceTree = "<group>"; };
 		F2E2CDB123FBF89B00F59588 /* ChangeBranchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeBranchVC.xib; sourceTree = "<group>"; };
-		F2E2CDB223FBF89B00F59588 /* DefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		F2E2CDB323FBF89B00F59588 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		F2E2CDB423FBF89C00F59588 /* ChangeBranchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeBranchVC.swift; sourceTree = "<group>"; };
 		F2E2CDB523FBF89C00F59588 /* SideMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuVC.xib; sourceTree = "<group>"; };
@@ -181,7 +177,6 @@
 				04F5589C23FC27B4005619AF /* CityTableVC.xib */,
 				04F5589923FC27B4005619AF /* ConfirmVC.swift */,
 				04F5589723FC27B4005619AF /* ConfirmVC.xib */,
-				04F5589B23FC27B4005619AF /* Defaults.swift */,
 				04F558A323FC27B5005619AF /* GeneraltableVC.swift */,
 				04F5589F23FC27B5005619AF /* GeneraltableVC.xib */,
 				04F5589E23FC27B5005619AF /* Lang.swift */,
@@ -296,7 +291,6 @@
 				F2E2CDAE23FBF89B00F59588 /* ChangeBranchTVC.xib */,
 				F2E2CDB423FBF89C00F59588 /* ChangeBranchVC.swift */,
 				F2E2CDB123FBF89B00F59588 /* ChangeBranchVC.xib */,
-				F2E2CDB223FBF89B00F59588 /* DefaultKeys.swift */,
 				F2E2CDAD23FBF89B00F59588 /* SideMenuItemTVC.swift */,
 				F2E2CDB023FBF89B00F59588 /* SideMenuItemTVC.xib */,
 				F2E2CDB323FBF89B00F59588 /* SideMenuVC.swift */,
@@ -480,7 +474,6 @@
 				F2E2CDAC23FBF87800F59588 /* WatchedProductsVC.swift in Sources */,
 				8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */,
 				F2E2CDC623FBF8CA00F59588 /* DetailProductVC.swift in Sources */,
-				F2E2CDBB23FBF89C00F59588 /* DefaultKeys.swift in Sources */,
 				F2E2CDB823FBF89C00F59588 /* ChangeBranchTVC.swift in Sources */,
 				04F558B023FC27B5005619AF /* Lang.swift in Sources */,
 				87AAD02823F661D200C6D353 /* Home_CarouselTVC.swift in Sources */,
@@ -501,7 +494,6 @@
 				04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */,
 				F2E2CDA323FBF87800F59588 /* FAQVC.swift in Sources */,
 				F2E2CDCB23FBF8CA00F59588 /* DetailProductImageVC.swift in Sources */,
-				04F558AD23FC27B5005619AF /* Defaults.swift in Sources */,
 				04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */,
 				04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */,
 				87AAD02C23F67DFA00C6D353 /* Home_CarouselVC.swift in Sources */,
