@@ -8,5 +8,6 @@ target 'OnlineShoppingClone' do
   # Pods for OnlineShoppingClone
 
 pod 'Alamofire'
-pod 'AKSideMenu'
+pod 'SwiftyJSON'
+
 end
