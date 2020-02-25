@@ -13,12 +13,14 @@ class WelcomeVC: UIViewController {
 
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var rigthBarBtn: UIBarButtonItem!
     var data:[WelcomeDM] = [
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeFirst"), title: "A large assortment", subtitle: "Large range with your favourite networks"),
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeSecond"), title: "Save time", subtitle: "Now you do not need to visit hypermarkets, we will do it for you"),
         WelcomeDM(image: #imageLiteral(resourceName: "welcomeThird"), title: "Fast delivery", subtitle: "Delivery at a convenient time for you")
     ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,8 @@ class WelcomeVC: UIViewController {
         setUpCollectionView()
         setUpBarButton()
         updateLabel()
+        
+    
     }
     
     func setUpBarButton() {
@@ -81,6 +85,33 @@ extension WelcomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            self.view.viewWithTag(1)?.backgroundColor = .black
+            self.view.viewWithTag(10)?.backgroundColor = .black
+            self.view.viewWithTag(2)?.backgroundColor = .white
+            self.view.viewWithTag(20)?.backgroundColor = .white
+            self.view.viewWithTag(30)?.backgroundColor = .white
+            self.view.viewWithTag(3)?.backgroundColor = .white
+
+        } else if indexPath.row == 1 {
+            self.view.viewWithTag(2)?.backgroundColor = .black
+            self.view.viewWithTag(20)?.backgroundColor = .black
+            self.view.viewWithTag(1)?.backgroundColor = .white
+            self.view.viewWithTag(3)?.backgroundColor = .white
+            self.view.viewWithTag(10)?.backgroundColor = .white
+            self.view.viewWithTag(30)?.backgroundColor = .white
+
+        } else if indexPath.row == 2 {
+            self.view.viewWithTag(3)?.backgroundColor = .black
+            self.view.viewWithTag(30)?.backgroundColor = .black
+            self.view.viewWithTag(10)?.backgroundColor = .white
+            self.view.viewWithTag(20)?.backgroundColor = .white
+            self.view.viewWithTag(1)?.backgroundColor = .white
+            self.view.viewWithTag(2)?.backgroundColor = .white
+
+        }
+
         if indexPath.row == data.count-1 {
             nextBtn.setTitle("Login", for: .normal)
         }
@@ -91,7 +122,7 @@ extension WelcomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
 }
 
-extension WelcomeVC{
+extension WelcomeVC {
     
     // Language change of strings
     @objc func updateLabel() {

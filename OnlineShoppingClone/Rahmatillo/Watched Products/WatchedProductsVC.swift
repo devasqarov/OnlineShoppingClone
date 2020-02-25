@@ -10,6 +10,7 @@
 import UIKit
 
 class WatchedProductsVC: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,6 +26,9 @@ class WatchedProductsVC: UIViewController {
     }
     
 }
+
+
+//MARK: - TableView extension
 
 extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
     

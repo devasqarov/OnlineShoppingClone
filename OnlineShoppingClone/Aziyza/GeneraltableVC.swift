@@ -34,6 +34,8 @@ class GeneraltableVC: UIViewController {
     }
 
 }
+
+//MARK: - TableView Methods
 extension GeneraltableVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,6 +47,7 @@ extension GeneraltableVC: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = data[indexPath.row] as? String
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if data[indexPath.row] as? String == "English" {
             UserDefaults.standard.set("en", forKey: DefaultKeys.LANG_KEY)

@@ -7,19 +7,24 @@
 //
 
 import UIKit
+
 protocol DidStarSelectedProtocol {
     func didStarSelected()
 }
+
 class FavoriteWatchedTVC: UITableViewCell {
+    
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameOfProductLbl: UILabel!
     
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var addView: UIView!
     @IBOutlet weak var addToCartView: UIView!
+    
     @IBOutlet weak var countOfProductLbl: UILabel!
     @IBOutlet weak var pricePCLbl: UILabel!
     @IBOutlet weak var totalPriceLbl: UILabel!
+    
     
     @IBOutlet weak var starBtn: UIButton!
     
@@ -45,6 +50,7 @@ class FavoriteWatchedTVC: UITableViewCell {
         countOfProductLbl.text = "\(count)"
     }
     
+    
 //    func updateCell(with data: SomeDM){
 //        if data.isFavorite{
 //            starBtn.setImage(UIImage(systemName: "star.fill"), for: .normal)
@@ -55,7 +61,7 @@ class FavoriteWatchedTVC: UITableViewCell {
     
     @IBAction func plusPressed(_ sender: UIButton) {
         count += 1
-        if count == 1{
+        if count == 1 {
             isViewHidden = !isViewHidden
             addToCartView.isHidden = isViewHidden
             addView.isHidden = !isViewHidden
@@ -66,7 +72,7 @@ class FavoriteWatchedTVC: UITableViewCell {
     
     @IBAction func minusPressed(_ sender: UIButton) {
         count -= 1
-        if count <= 0{
+        if count <= 0 {
             count = 1
             isViewHidden = !isViewHidden
             addToCartView.isHidden = isViewHidden
@@ -75,6 +81,8 @@ class FavoriteWatchedTVC: UITableViewCell {
         countOfProductLbl.text = "\(count)"
         totalPriceLbl.text = "\(Int(pricePCLbl.text!)! * count)"
     }
+    
+    #warning("Add method to update items")
     
     @IBAction func addToCartBtnPressed(_ sender: UIButton) {
         isViewHidden = !isViewHidden

@@ -20,7 +20,7 @@ class FavoriteProductsVC: UIViewController {
     func initUI(){
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "FavoriteWatchedTVC", bundle: nil), forCellReuseIdentifier: "favoriteTVC")
+        tableView.register(UINib(nibName: DefaultKeys.TVC_FAVORITE_WATCHED , bundle: nil), forCellReuseIdentifier: DefaultKeys.TVC_FAVORITE_WATCHED)
         
     }
     
@@ -45,7 +45,7 @@ extension FavoriteProductsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteTVC", for: indexPath) as? FavoriteWatchedTVC else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DefaultKeys.TVC_FAVORITE_WATCHED, for: indexPath) as? FavoriteWatchedTVC else {return UITableViewCell()}
         
         return cell
         

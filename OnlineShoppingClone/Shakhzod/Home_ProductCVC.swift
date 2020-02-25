@@ -41,6 +41,7 @@ class Home_ProductCVC: UICollectionViewCell {
         addProdCounter(superView: self.containerView)
     }
     
+    
     public func addProdCounter(superView: UIView){
         let counterView = UIView()
         counterView.layer.cornerRadius = 10

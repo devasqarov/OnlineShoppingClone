@@ -14,6 +14,8 @@
 		04F558AA23FC27B5005619AF /* CityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589823FC27B4005619AF /* CityTableCell.xib */; };
 		04F558AB23FC27B5005619AF /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589923FC27B4005619AF /* ConfirmVC.swift */; };
 		04F558AC23FC27B5005619AF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589A23FC27B4005619AF /* LoginVC.swift */; };
+
+		04F558AD23FC27B5005619AF /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589B23FC27B4005619AF /* DefaultKeys.swift */; };
 		04F558AE23FC27B5005619AF /* CityTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5589C23FC27B4005619AF /* CityTableVC.xib */; };
 		04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589D23FC27B4005619AF /* CityTableCell.swift */; };
 		04F558B023FC27B5005619AF /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5589E23FC27B5005619AF /* Lang.swift */; };
@@ -24,6 +26,19 @@
 		04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A323FC27B5005619AF /* GeneraltableVC.swift */; };
 		04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A423FC27B5005619AF /* WelcomeVC.swift */; };
 		04F558B723FC27B5005619AF /* WelcomeDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558A523FC27B5005619AF /* WelcomeDM.swift */; };
+		04F558BA23FD2BE7005619AF /* CitySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558B823FD2BE7005619AF /* CitySearchVC.swift */; };
+		04F558BB23FD2BE7005619AF /* CitySearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F558B923FD2BE7005619AF /* CitySearchVC.xib */; };
+		04F558C1240118CD005619AF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F558C0240118CD005619AF /* String_Extension.swift */; };
+		2D611AD5240260C800E4E0F6 /* ChooseDeliveryTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D611AD3240260C800E4E0F6 /* ChooseDeliveryTimeVC.swift */; };
+		2D611AD6240260C800E4E0F6 /* ChooseDeliveryTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D611AD4240260C800E4E0F6 /* ChooseDeliveryTimeVC.xib */; };
+		2D611AD924028EA900E4E0F6 /* ChooseDeliveryTimeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D611AD724028EA900E4E0F6 /* ChooseDeliveryTimeCVC.swift */; };
+		2D611ADA24028EA900E4E0F6 /* ChooseDeliveryTimeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D611AD824028EA900E4E0F6 /* ChooseDeliveryTimeCVC.xib */; };
+		2D611ADD24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D611ADB24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.swift */; };
+		2D611ADE24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D611ADC24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.xib */; };
+		2D611AE12403CC0B00E4E0F6 /* ChoosePaymentMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D611ADF2403CC0B00E4E0F6 /* ChoosePaymentMethodVC.swift */; };
+		2D611AE22403CC0B00E4E0F6 /* ChoosePaymentMethodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D611AE02403CC0B00E4E0F6 /* ChoosePaymentMethodVC.xib */; };
+		2D611AE52403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D611AE32403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.swift */; };
+		2D611AE62403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D611AE42403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.xib */; };
 		2D8CEE0823F5940800354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2D8CEE0C23F594DD00354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2D8CEE1423F5965D00354724 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -51,6 +66,7 @@
 		8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39923FC27F100615547 /* AllCategoriesVC.swift */; };
 		8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */; };
 		8DDEB39E23FC27F200615547 /* AllCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */; };
+		F269DDBC23FC431F00E0687C /* NavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269DDBB23FC431F00E0687C /* NavigationTransition.swift */; };
 		F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA37023F55B2300680DD9 /* AppDelegate.swift */; };
 		F26DA37A23F55B2500680DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37923F55B2500680DD9 /* Assets.xcassets */; };
 		F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */; };
@@ -89,6 +105,8 @@
 		04F5589823FC27B4005619AF /* CityTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableCell.xib; sourceTree = "<group>"; };
 		04F5589923FC27B4005619AF /* ConfirmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
 		04F5589A23FC27B4005619AF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+
+		04F5589B23FC27B4005619AF /* DefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		04F5589C23FC27B4005619AF /* CityTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableVC.xib; sourceTree = "<group>"; };
 		04F5589D23FC27B4005619AF /* CityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableCell.swift; sourceTree = "<group>"; };
 		04F5589E23FC27B5005619AF /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
@@ -99,7 +117,20 @@
 		04F558A323FC27B5005619AF /* GeneraltableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneraltableVC.swift; sourceTree = "<group>"; };
 		04F558A423FC27B5005619AF /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		04F558A523FC27B5005619AF /* WelcomeDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeDM.swift; sourceTree = "<group>"; };
+		04F558B823FD2BE7005619AF /* CitySearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchVC.swift; sourceTree = "<group>"; };
+		04F558B923FD2BE7005619AF /* CitySearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySearchVC.xib; sourceTree = "<group>"; };
+		04F558C0240118CD005619AF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		151F3E10BD00120DFF0F122A /* Pods_OnlineShoppingClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShoppingClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D611AD3240260C800E4E0F6 /* ChooseDeliveryTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDeliveryTimeVC.swift; sourceTree = "<group>"; };
+		2D611AD4240260C800E4E0F6 /* ChooseDeliveryTimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDeliveryTimeVC.xib; sourceTree = "<group>"; };
+		2D611AD724028EA900E4E0F6 /* ChooseDeliveryTimeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDeliveryTimeCVC.swift; sourceTree = "<group>"; };
+		2D611AD824028EA900E4E0F6 /* ChooseDeliveryTimeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDeliveryTimeCVC.xib; sourceTree = "<group>"; };
+		2D611ADB24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDeliveryTimeTVC.swift; sourceTree = "<group>"; };
+		2D611ADC24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDeliveryTimeTVC.xib; sourceTree = "<group>"; };
+		2D611ADF2403CC0B00E4E0F6 /* ChoosePaymentMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePaymentMethodVC.swift; sourceTree = "<group>"; };
+		2D611AE02403CC0B00E4E0F6 /* ChoosePaymentMethodVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoosePaymentMethodVC.xib; sourceTree = "<group>"; };
+		2D611AE32403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePaymentMethodTVC.swift; sourceTree = "<group>"; };
+		2D611AE42403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoosePaymentMethodTVC.xib; sourceTree = "<group>"; };
 		87AAD01223F58FC300C6D353 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		87AAD01323F58FC300C6D353 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		87AAD01623F5CDDA00C6D353 /* Home_CategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_CategoriesTVC.swift; sourceTree = "<group>"; };
@@ -122,6 +153,7 @@
 		8DDEB39A23FC27F100615547 /* MyNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationVC.swift; sourceTree = "<group>"; };
 		8DDEB39B23FC27F100615547 /* AllCategoriesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCategoriesVC.xib; sourceTree = "<group>"; };
 		9165A9340A3603BC2169E201 /* Pods-OnlineShoppingClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineShoppingClone.release.xcconfig"; path = "Target Support Files/Pods-OnlineShoppingClone/Pods-OnlineShoppingClone.release.xcconfig"; sourceTree = "<group>"; };
+		F269DDBB23FC431F00E0687C /* NavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransition.swift; sourceTree = "<group>"; };
 		F26DA36D23F55B2300680DD9 /* OnlineShoppingClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShoppingClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26DA37023F55B2300680DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26DA37923F55B2500680DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +209,8 @@
 				04F5589C23FC27B4005619AF /* CityTableVC.xib */,
 				04F5589923FC27B4005619AF /* ConfirmVC.swift */,
 				04F5589723FC27B4005619AF /* ConfirmVC.xib */,
+
+				04F5589B23FC27B4005619AF /* DefaultKeys.swift */,
 				04F558A323FC27B5005619AF /* GeneraltableVC.swift */,
 				04F5589F23FC27B5005619AF /* GeneraltableVC.xib */,
 				04F5589E23FC27B5005619AF /* Lang.swift */,
@@ -187,6 +221,9 @@
 				04F558A523FC27B5005619AF /* WelcomeDM.swift */,
 				04F558A423FC27B5005619AF /* WelcomeVC.swift */,
 				04F5589623FC27B4005619AF /* WelcomeVC.xib */,
+				04F558B823FD2BE7005619AF /* CitySearchVC.swift */,
+				04F558B923FD2BE7005619AF /* CitySearchVC.xib */,
+				04F558C0240118CD005619AF /* String_Extension.swift */,
 			);
 			path = Aziyza;
 			sourceTree = "<group>";
@@ -206,6 +243,100 @@
 				9165A9340A3603BC2169E201 /* Pods-OnlineShoppingClone.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2D611AE72403F77C00E4E0F6 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2CD9923FBF87800F59588 /* FAQVC.swift */,
+				F2E2CD9D23FBF87800F59588 /* FAQVC.xib */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		2D611AE82403F78E00E4E0F6 /* Favorite Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D611AE92403F7AF00E4E0F6 /* TVC */,
+				F2E2CDA123FBF87800F59588 /* FavoriteProductsVC.swift */,
+				F2E2CD9F23FBF87800F59588 /* FavoriteProductsVC.xib */,
+			);
+			path = "Favorite Products";
+			sourceTree = "<group>";
+		};
+		2D611AE92403F7AF00E4E0F6 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2CD9A23FBF87800F59588 /* FavoriteWatchedTVC.swift */,
+				F2E2CDA023FBF87800F59588 /* FavoriteWatchedTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		2D611AEA2403F7D200E4E0F6 /* Public Offer */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2CD9B23FBF87800F59588 /* PublicOfferVC.swift */,
+				F2E2CD9C23FBF87800F59588 /* PublicOfferVC.xib */,
+			);
+			path = "Public Offer";
+			sourceTree = "<group>";
+		};
+		2D611AEB2403F7ED00E4E0F6 /* Watched Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2CDA223FBF87800F59588 /* WatchedProductsVC.swift */,
+				F2E2CD9E23FBF87800F59588 /* WatchedProductsVC.xib */,
+			);
+			path = "Watched Products";
+			sourceTree = "<group>";
+		};
+		2D611AEC2403F80B00E4E0F6 /* Delivery Time */ = {
+			isa = PBXGroup;
+			children = (
+				2D611AEE2403F82F00E4E0F6 /* CVC */,
+				2D611AED2403F82200E4E0F6 /* TVC */,
+				2D611AD3240260C800E4E0F6 /* ChooseDeliveryTimeVC.swift */,
+				2D611AD4240260C800E4E0F6 /* ChooseDeliveryTimeVC.xib */,
+			);
+			path = "Delivery Time";
+			sourceTree = "<group>";
+		};
+		2D611AED2403F82200E4E0F6 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				2D611ADB24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.swift */,
+				2D611ADC24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		2D611AEE2403F82F00E4E0F6 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				2D611AD724028EA900E4E0F6 /* ChooseDeliveryTimeCVC.swift */,
+				2D611AD824028EA900E4E0F6 /* ChooseDeliveryTimeCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		2D611AEF2403F84000E4E0F6 /* Payment Method */ = {
+			isa = PBXGroup;
+			children = (
+				2D611AF02403F85100E4E0F6 /* TVC */,
+				2D611ADF2403CC0B00E4E0F6 /* ChoosePaymentMethodVC.swift */,
+				2D611AE02403CC0B00E4E0F6 /* ChoosePaymentMethodVC.xib */,
+			);
+			path = "Payment Method";
+			sourceTree = "<group>";
+		};
+		2D611AF02403F85100E4E0F6 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				2D611AE32403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.swift */,
+				2D611AE42403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.xib */,
+			);
+			path = TVC;
 			sourceTree = "<group>";
 		};
 		87FD394523F82FDA00991317 /* Shakhzod */ = {
@@ -263,6 +394,7 @@
 				F26DA37923F55B2500680DD9 /* Assets.xcassets */,
 				F26DA37B23F55B2500680DD9 /* LaunchScreen.storyboard */,
 				F26DA37E23F55B2500680DD9 /* Info.plist */,
+				F269DDBB23FC431F00E0687C /* NavigationTransition.swift */,
 			);
 			path = OnlineShoppingClone;
 			sourceTree = "<group>";
@@ -302,16 +434,12 @@
 		F2E2CD9823FBF85200F59588 /* Rahmatillo */ = {
 			isa = PBXGroup;
 			children = (
-				F2E2CD9923FBF87800F59588 /* FAQVC.swift */,
-				F2E2CD9D23FBF87800F59588 /* FAQVC.xib */,
-				F2E2CDA123FBF87800F59588 /* FavoriteProductsVC.swift */,
-				F2E2CD9F23FBF87800F59588 /* FavoriteProductsVC.xib */,
-				F2E2CD9A23FBF87800F59588 /* FavoriteWatchedTVC.swift */,
-				F2E2CDA023FBF87800F59588 /* FavoriteWatchedTVC.xib */,
-				F2E2CD9B23FBF87800F59588 /* PublicOfferVC.swift */,
-				F2E2CD9C23FBF87800F59588 /* PublicOfferVC.xib */,
-				F2E2CDA223FBF87800F59588 /* WatchedProductsVC.swift */,
-				F2E2CD9E23FBF87800F59588 /* WatchedProductsVC.xib */,
+				2D611AEF2403F84000E4E0F6 /* Payment Method */,
+				2D611AEC2403F80B00E4E0F6 /* Delivery Time */,
+				2D611AEB2403F7ED00E4E0F6 /* Watched Products */,
+				2D611AEA2403F7D200E4E0F6 /* Public Offer */,
+				2D611AE82403F78E00E4E0F6 /* Favorite Products */,
+				2D611AE72403F77C00E4E0F6 /* FAQ */,
 			);
 			path = Rahmatillo;
 			sourceTree = "<group>";
@@ -379,7 +507,9 @@
 				F2E2CDBA23FBF89C00F59588 /* ChangeBranchVC.xib in Resources */,
 				87AAD01D23F5CE6700C6D353 /* Home_CarouselCVC.xib in Resources */,
 				87AAD02123F5D96900C6D353 /* Home_ProductCVC.xib in Resources */,
+				2D611AE22403CC0B00E4E0F6 /* ChoosePaymentMethodVC.xib in Resources */,
 				F2E2CDA623FBF87800F59588 /* PublicOfferVC.xib in Resources */,
+				2D611ADE24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.xib in Resources */,
 				F26DA37D23F55B2500680DD9 /* LaunchScreen.storyboard in Resources */,
 				87AAD02D23F67DFA00C6D353 /* Home_CarouselVC.xib in Resources */,
 				87AAD02923F661D200C6D353 /* Home_CarouselTVC.xib in Resources */,
@@ -387,12 +517,16 @@
 				87AAD01923F5CDDA00C6D353 /* Home_CategoriesTVC.xib in Resources */,
 				F2E2CDCA23FBF8CA00F59588 /* DetailProductVC.xib in Resources */,
 				87AAD03523F6CE7600C6D353 /* Home_SearchVC.xib in Resources */,
+				2D611AD6240260C800E4E0F6 /* ChooseDeliveryTimeVC.xib in Resources */,
 				87AAD03923F6DDC200C6D353 /* Home_SearchTVC.xib in Resources */,
 				F2E2CDC823FBF8CA00F59588 /* DetailProductCVC.xib in Resources */,
 				87AAD03123F684CC00C6D353 /* Home_CarouselVC_CVC.xib in Resources */,
 				04F558A723FC27B5005619AF /* LoginVC.xib in Resources */,
+				2D611ADA24028EA900E4E0F6 /* ChooseDeliveryTimeCVC.xib in Resources */,
 				04F558B223FC27B5005619AF /* WelcomeCVCell.xib in Resources */,
 				F2E2CDB723FBF89C00F59588 /* ChangeBranchTVC.xib in Resources */,
+				2D611AE62403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.xib in Resources */,
+				04F558BB23FD2BE7005619AF /* CitySearchVC.xib in Resources */,
 				04F558A823FC27B5005619AF /* WelcomeVC.xib in Resources */,
 				04F558AA23FC27B5005619AF /* CityTableCell.xib in Resources */,
 				04F558B123FC27B5005619AF /* GeneraltableVC.xib in Resources */,
@@ -464,14 +598,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E2CDCC23FBF8CA00F59588 /* DetailProductCVC.swift in Sources */,
+				2D611ADD24028EE400E4E0F6 /* ChooseDeliveryTimeTVC.swift in Sources */,
 				87AAD01823F5CDDA00C6D353 /* Home_CategoriesTVC.swift in Sources */,
 				04F558AC23FC27B5005619AF /* LoginVC.swift in Sources */,
 				F26DA37123F55B2300680DD9 /* AppDelegate.swift in Sources */,
+				04F558C1240118CD005619AF /* String_Extension.swift in Sources */,
 				04F558AB23FC27B5005619AF /* ConfirmVC.swift in Sources */,
 				87AAD02023F5D96900C6D353 /* Home_ProductCVC.swift in Sources */,
 				87AAD01423F58FC300C6D353 /* HomeVC.swift in Sources */,
 				04F558B723FC27B5005619AF /* WelcomeDM.swift in Sources */,
 				F2E2CDAC23FBF87800F59588 /* WatchedProductsVC.swift in Sources */,
+				2D611AD5240260C800E4E0F6 /* ChooseDeliveryTimeVC.swift in Sources */,
 				8DDEB39C23FC27F200615547 /* AllCategoriesVC.swift in Sources */,
 				F2E2CDC623FBF8CA00F59588 /* DetailProductVC.swift in Sources */,
 				F2E2CDB823FBF89C00F59588 /* ChangeBranchTVC.swift in Sources */,
@@ -479,6 +616,7 @@
 				87AAD02823F661D200C6D353 /* Home_CarouselTVC.swift in Sources */,
 				8DDEB39D23FC27F200615547 /* MyNavigationVC.swift in Sources */,
 				F2E2CDBD23FBF89C00F59588 /* ChangeBranchVC.swift in Sources */,
+				2D611AD924028EA900E4E0F6 /* ChooseDeliveryTimeCVC.swift in Sources */,
 				F2E2CDB623FBF89C00F59588 /* SideMenuItemTVC.swift in Sources */,
 				87AAD01C23F5CE6700C6D353 /* Home_CarouselCVC.swift in Sources */,
 				87AAD03023F684CC00C6D353 /* Home_CarouselVC_CVC.swift in Sources */,
@@ -493,8 +631,13 @@
 				F2E2CDAB23FBF87800F59588 /* FavoriteProductsVC.swift in Sources */,
 				04F558B623FC27B5005619AF /* WelcomeVC.swift in Sources */,
 				F2E2CDA323FBF87800F59588 /* FAQVC.swift in Sources */,
+				F269DDBC23FC431F00E0687C /* NavigationTransition.swift in Sources */,
+				2D611AE52403CE6E00E4E0F6 /* ChoosePaymentMethodTVC.swift in Sources */,
 				F2E2CDCB23FBF8CA00F59588 /* DetailProductImageVC.swift in Sources */,
+				04F558BA23FD2BE7005619AF /* CitySearchVC.swift in Sources */,
+				04F558AD23FC27B5005619AF /* DefaultKeys.swift in Sources */,
 				04F558AF23FC27B5005619AF /* CityTableCell.swift in Sources */,
+				2D611AE12403CC0B00E4E0F6 /* ChoosePaymentMethodVC.swift in Sources */,
 				04F558B523FC27B5005619AF /* GeneraltableVC.swift in Sources */,
 				87AAD02C23F67DFA00C6D353 /* Home_CarouselVC.swift in Sources */,
 				04F558B323FC27B5005619AF /* CityTableDM.swift in Sources */,
