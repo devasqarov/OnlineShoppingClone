@@ -1,34 +1,35 @@
 //
-//  WatchedProductsVC.swift
+//  FavoriteProductsVC.swift
 //  OnlineShoppingClone
 //
 //  Created by Rakhmatillo Topiboldiev on 2/13/20.
 //  Copyright © 2020 Nodirbek Asqarov. All rights reserved.
 //
 
-
 import UIKit
 
-class WatchedProductsVC: UIViewController {
-    
+class FavoriteProductsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        initUI()
     }
+    
     
     func initUI(){
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "FavoriteWatchedTVC", bundle: nil), forCellReuseIdentifier: "favoriteTVC")
+        tableView.register(UINib(nibName: DefaultKeys.TVC_FAVORITE_WATCHED , bundle: nil), forCellReuseIdentifier: DefaultKeys.TVC_FAVORITE_WATCHED)
+        
     }
     
 }
 
 
-extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
+//MARK: - TableView Delegate
+
+extension FavoriteProductsVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         3
@@ -44,21 +45,14 @@ extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteTVC", for: indexPath) as? FavoriteWatchedTVC else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DefaultKeys.TVC_FAVORITE_WATCHED, for: indexPath) as? FavoriteWatchedTVC else {return UITableViewCell()}
         
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if self.view.frame.height <= 700{
-            return self.view.frame.height / 4.9
-        }else {
-            return self.view.frame.height / 6.5
-            
-        }
-        
+        return 140
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
