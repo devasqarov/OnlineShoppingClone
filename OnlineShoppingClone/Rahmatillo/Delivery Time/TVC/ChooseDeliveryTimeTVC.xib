@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseDeliveryTimeTVC" rowHeight="40" id="KGk-i7-Jjw" customClass="ChooseDeliveryTimeTVC" customModule="OnlineShoppingClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgv-DN-ELZ">
+                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-Ks-r3r">
+                                <rect key="frame" x="1" y="1" width="18" height="18"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9gT-Ks-r3r" firstAttribute="leading" secondItem="Pgv-DN-ELZ" secondAttribute="leading" constant="1" id="9fX-Nn-DBF"/>
+                            <constraint firstAttribute="width" secondItem="Pgv-DN-ELZ" secondAttribute="height" multiplier="1:1" id="Dpb-gE-m3q"/>
+                            <constraint firstAttribute="width" secondItem="Pgv-DN-ELZ" secondAttribute="height" id="Edw-aq-A4B"/>
+                            <constraint firstAttribute="bottom" secondItem="9gT-Ks-r3r" secondAttribute="bottom" constant="1" id="Lnr-gV-BoF"/>
+                            <constraint firstAttribute="trailing" secondItem="9gT-Ks-r3r" secondAttribute="trailing" constant="1" id="edx-zw-fL9"/>
+                            <constraint firstItem="9gT-Ks-r3r" firstAttribute="top" secondItem="Pgv-DN-ELZ" secondAttribute="top" constant="1" id="vgG-zE-Tqp"/>
+                            <constraint firstAttribute="height" constant="20" id="z1m-zd-1Pe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00 - 11:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-sZ-MTx">
+                        <rect key="frame" x="50" y="11" width="90" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unavailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRL-Z6-w7e">
+                        <rect key="frame" x="300" y="11" width="79" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J4d-sZ-MTx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="AIP-Kg-pVy"/>
+                    <constraint firstItem="Pgv-DN-ELZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BDP-hI-rvs"/>
+                    <constraint firstItem="KRL-Z6-w7e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="FIU-Jm-woM"/>
+                    <constraint firstItem="Pgv-DN-ELZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GUn-Nz-bGe"/>
+                    <constraint firstAttribute="trailing" secondItem="KRL-Z6-w7e" secondAttribute="trailing" constant="10" id="T85-KT-8bM"/>
+                    <constraint firstItem="J4d-sZ-MTx" firstAttribute="centerY" secondItem="9gT-Ks-r3r" secondAttribute="centerY" id="TLl-tr-Ubz"/>
+                    <constraint firstItem="Pgv-DN-ELZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xwh-eX-PEK"/>
+                    <constraint firstItem="J4d-sZ-MTx" firstAttribute="leading" secondItem="Pgv-DN-ELZ" secondAttribute="trailing" constant="20" id="cHB-fT-c0s"/>
+                    <constraint firstAttribute="bottom" secondItem="Pgv-DN-ELZ" secondAttribute="bottom" constant="10" id="dwS-f1-qXF"/>
+                    <constraint firstAttribute="bottom" secondItem="KRL-Z6-w7e" secondAttribute="bottom" constant="11" id="olg-sL-c5h"/>
+                    <constraint firstAttribute="bottom" secondItem="J4d-sZ-MTx" secondAttribute="bottom" constant="11" id="pme-4L-Xb7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="52.898550724637687" y="98.4375"/>
+        </tableViewCell>
+    </objects>
+</document>

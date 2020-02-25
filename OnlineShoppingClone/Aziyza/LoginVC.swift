@@ -82,13 +82,14 @@ class LoginVC: UIViewController, UITextFieldDelegate, SelectedCitySend  {
     @objc func leftBtnPressed() {
         self.dismiss(animated: true, completion: nil)
 
-    @IBAction func chooseCityBtnPressed(_ sender: UIButton) {
-        let vc = CityTableVC(nibName: "CityTableVC", bundle: nil)
-        vc.delegate = self
-        let navvc = UINavigationController(rootViewController: vc)
-        navvc.modalPresentationStyle = .overFullScreen
-        self.present(navvc, animated: true, completion: nil)
+   
     }
+    @IBAction func chooseCityBtnPressed(_ sender: UIButton) {
+           let vc = CityTableVC(nibName: "CityTableVC", bundle: nil)
+           vc.delegate = self
+           let navvc = UINavigationController(rootViewController: vc)
+           navvc.modalPresentationStyle = .overFullScreen
+           self.present(navvc, animated: true, completion: nil)
     
     //making textfield accept only number
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -101,6 +102,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, SelectedCitySend  {
     }
 }
 
+}
 
 //MARK: Language change extension
 extension LoginVC {

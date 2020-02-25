@@ -1,35 +1,36 @@
 //
-//  FavoriteProductsVC.swift
+//  WatchedProductsVC.swift
 //  OnlineShoppingClone
 //
 //  Created by Rakhmatillo Topiboldiev on 2/13/20.
 //  Copyright © 2020 Nodirbek Asqarov. All rights reserved.
 //
 
+
 import UIKit
 
-class FavoriteProductsVC: UIViewController {
+class WatchedProductsVC: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initUI()
+        
+        
     }
-    
     
     func initUI(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "FavoriteWatchedTVC", bundle: nil), forCellReuseIdentifier: "favoriteTVC")
-        
     }
     
 }
 
 
-//MARK: - TableView Delegate
+//MARK: - TableView extension
 
-extension FavoriteProductsVC: UITableViewDelegate, UITableViewDataSource{
+extension WatchedProductsVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         3
@@ -52,7 +53,14 @@ extension FavoriteProductsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        
+        if self.view.frame.height <= 700{
+            return self.view.frame.height / 4.9
+        }else {
+            return self.view.frame.height / 6.5
+            
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
