@@ -24,28 +24,9 @@ class ChangeBranchVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ChangeBranchTVC", bundle: nil), forCellWithReuseIdentifier: "ChangeBranchTVC")
-        sideMenuViewController?.panGestureEnabled = true
     }
-    
-    #warning("Delete it")
-//    func selectView() -> UIImageView {
-//        let selectedSet = UIImageView(frame: CGRect(x: view.frame.width/2-70, y: view.frame.width/2-80, width: 30, height: 30))
-//        selectedSet.clipsToBounds = true
-//        selectedSet.contentMode = .scaleAspectFill
-//        selectedSet.image = UIImage(named: "correct")
-//        selectedSet.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-//        selectedSet.tag = 10
-//        return selectedSet
-//    }
-    
-    @IBAction func cancelBtnPressed(_ sender: Any) {
-        sideMenuViewController?.setContentViewController(UINavigationController(rootViewController: HomeVC()), animated: true)
-        sideMenuViewController?.presentLeftMenuViewController()
-    }
-    
     
     override func viewWillDisappear(_ animated: Bool) {
-        sideMenuViewController?.panGestureEnabled = true
     }
     
     

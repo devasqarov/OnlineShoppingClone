@@ -8,8 +8,73 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+enum ViewType {
+    case def
+    case fromView
+}
+
+class HomeVC: UIViewController, SideMenuDelegate {
     
+    func changeVC(vc: UIViewController) {
+        typpe = .fromView
+        navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    func gotoAllCategories() {
+        changeVC(vc: AllCategoriesVC())
+    }
+    
+    
+    func changeSupplier() {
+        changeVC(vc: ChangeBranchVC())
+    }
+    
+    func gotoMyWallet() {
+        //changeVC(vc: MyWalletVC())
+    }
+    
+    func gotoMyOrders() {
+        //changeVC(vc: MyOrdersVC())
+    }
+    
+    func gotoAddressBook() {
+        //changeVC(vc: AddressBookVC())
+    }
+    
+    func gotoCardList() {
+        //changeVC(vc: CardListVC())
+    }
+    
+    func gotoFavoriteProducts() {
+        changeVC(vc: FavoriteProductsVC())
+    }
+    
+    func gotoWatchedProducts() {
+        changeVC(vc: WatchedProductsVC())
+    }
+    
+    func gotoFAQ() {
+        changeVC(vc: FAQVC())
+    }
+    
+    func gotoPublicOffer() {
+        changeVC(vc: PublicOfferVC())
+    }
+    
+    func gotoLanguage() {
+        //changeVC(vc: LanguageVC())
+    }
+    
+    func gotoSignIn() {
+        changeVC(vc: LoginVC())
+    }
+    
+    
+    
+    
+    var typpe: ViewType = .def
+    
+    var menu = MenuAnimation()
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -23,8 +88,15 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupNavCont()
-    
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if typpe == .fromView {
+            menuBtnPressed()
+        }
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         print(self.navigationController!.navigationBar.frame.height)
@@ -61,7 +133,12 @@ class HomeVC: UIViewController {
     
     @objc func menuBtnPressed(){
         print("menu pressed")
-        self.sideMenuViewController!.presentLeftMenuViewController()
+        let vc = SideMenuVC(nibName: "SideMenuVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.transitioningDelegate = self
+        vc.delegate = self
+        menu.delegate = vc.self
+        present(vc, animated: true, completion: nil)
     }
     
     @objc func shoppingCartBtnPressed(){
@@ -158,4 +235,21 @@ extension HomeVC: slideNum{
         self.present(vc, animated: true, completion: nil)
     }
     
+}
+
+
+extension HomeVC: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        menu.isPresent = true
+        return menu
+    }
+    
+    
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        menu.isPresent = false
+        menu.baseView = self.view
+        return menu
+    }
 }

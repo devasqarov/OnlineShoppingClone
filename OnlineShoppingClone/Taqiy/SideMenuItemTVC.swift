@@ -18,7 +18,7 @@ class SideMenuItemTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        subLabel.isHidden = true
     }
     
     func setData() {
