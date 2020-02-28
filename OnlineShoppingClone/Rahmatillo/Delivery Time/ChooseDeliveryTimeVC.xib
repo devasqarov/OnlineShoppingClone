@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseDeliveryTimeVC" customModule="OnlineShoppingClone" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="H78-fn-kl5" id="ysR-Pv-DAu"/>
+                <outlet property="nextBtn" destination="bZi-Rv-2DQ" id="N1Z-72-KLI"/>
                 <outlet property="tableView" destination="wc4-Rb-aKn" id="9oN-MW-NBh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,7 +29,20 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VH4-Hb-W3q">
                                     <rect key="frame" x="138" y="0.0" width="138" height="105.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-oD-zTI">
+                                            <rect key="frame" x="57" y="90.5" width="24" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="T17-J3-8mM"/>
+                                                <constraint firstAttribute="width" constant="24" id="n2C-Hh-NbJ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.20036922089041095" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ukV-oD-zTI" secondAttribute="bottom" constant="-3" id="DKB-4l-n1F"/>
+                                        <constraint firstItem="ukV-oD-zTI" firstAttribute="centerX" secondItem="VH4-Hb-W3q" secondAttribute="centerX" id="fYY-lR-fhc"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-ib-YKe">
                                     <rect key="frame" x="0.0" y="105.5" width="414" height="1"/>
@@ -124,4 +138,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </view>
     </objects>
+    <resources>
+        <image name="triangle" width="170" height="170"/>
+    </resources>
 </document>

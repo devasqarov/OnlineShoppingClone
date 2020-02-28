@@ -29,15 +29,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="web-lb-yEM">
+                                <rect key="frame" x="2" y="2" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9gT-Ks-r3r" firstAttribute="leading" secondItem="Pgv-DN-ELZ" secondAttribute="leading" constant="1" id="9fX-Nn-DBF"/>
+                            <constraint firstAttribute="bottom" secondItem="web-lb-yEM" secondAttribute="bottom" constant="2" id="ALh-5j-xee"/>
                             <constraint firstAttribute="width" secondItem="Pgv-DN-ELZ" secondAttribute="height" multiplier="1:1" id="Dpb-gE-m3q"/>
                             <constraint firstAttribute="width" secondItem="Pgv-DN-ELZ" secondAttribute="height" id="Edw-aq-A4B"/>
+                            <constraint firstItem="web-lb-yEM" firstAttribute="top" secondItem="Pgv-DN-ELZ" secondAttribute="top" constant="2" id="F47-qu-VyO"/>
                             <constraint firstAttribute="bottom" secondItem="9gT-Ks-r3r" secondAttribute="bottom" constant="1" id="Lnr-gV-BoF"/>
                             <constraint firstAttribute="trailing" secondItem="9gT-Ks-r3r" secondAttribute="trailing" constant="1" id="edx-zw-fL9"/>
+                            <constraint firstItem="web-lb-yEM" firstAttribute="leading" secondItem="Pgv-DN-ELZ" secondAttribute="leading" constant="2" id="ohs-Pu-IKv"/>
                             <constraint firstItem="9gT-Ks-r3r" firstAttribute="top" secondItem="Pgv-DN-ELZ" secondAttribute="top" constant="1" id="vgG-zE-Tqp"/>
+                            <constraint firstAttribute="trailing" secondItem="web-lb-yEM" secondAttribute="trailing" constant="2" id="x2f-Ef-M3k"/>
                             <constraint firstAttribute="height" constant="20" id="z1m-zd-1Pe"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -74,6 +87,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aviableLbl" destination="KRL-Z6-w7e" id="YxK-Ek-MLe"/>
+                <outlet property="isAviableView" destination="web-lb-yEM" id="mpb-Pd-OAU"/>
+                <outlet property="timeLbl" destination="J4d-sZ-MTx" id="ZhI-ZV-B7H"/>
+            </connections>
             <point key="canvasLocation" x="52.898550724637687" y="98.4375"/>
         </tableViewCell>
     </objects>
