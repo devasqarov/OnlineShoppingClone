@@ -35,17 +35,14 @@ class AllCategoriesVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        sideMenuViewController?.panGestureEnabled = false
     }
     
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        sideMenuViewController?.setContentViewController(UINavigationController(rootViewController: HomeVC()), animated: true)
-        sideMenuViewController?.presentLeftMenuViewController()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        sideMenuViewController?.panGestureEnabled = true
     }
     
 }

@@ -61,7 +61,6 @@ class HomeVC: UIViewController {
     
     @objc func menuBtnPressed(){
         print("menu pressed")
-        self.sideMenuViewController!.presentLeftMenuViewController()
     }
     
     @objc func shoppingCartBtnPressed(){

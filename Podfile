@@ -9,5 +9,5 @@ target 'OnlineShoppingClone' do
 
 pod 'Alamofire'
 pod 'SwiftyJSON'
-
+ 
 end

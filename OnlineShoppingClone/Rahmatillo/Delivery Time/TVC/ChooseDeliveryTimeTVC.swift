@@ -10,11 +10,16 @@ import UIKit
 
 class ChooseDeliveryTimeTVC: UITableViewCell {
 
+    @IBOutlet weak var isAviableView: UIView!
+    @IBOutlet weak var timeLbl: UILabel!
+    @IBOutlet weak var aviableLbl: UILabel!
+    
+    var isaviable: Bool = false
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        isAviableView.isHidden = true
     }
-
+  
    
     
 }

@@ -24,7 +24,6 @@ class ChangeBranchVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ChangeBranchTVC", bundle: nil), forCellWithReuseIdentifier: "ChangeBranchTVC")
-        sideMenuViewController?.panGestureEnabled = true
     }
     
     #warning("Delete it")
@@ -39,13 +38,11 @@ class ChangeBranchVC: UIViewController {
 //    }
     
     @IBAction func cancelBtnPressed(_ sender: Any) {
-        sideMenuViewController?.setContentViewController(UINavigationController(rootViewController: HomeVC()), animated: true)
-        sideMenuViewController?.presentLeftMenuViewController()
+        
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        sideMenuViewController?.panGestureEnabled = true
     }
     
     

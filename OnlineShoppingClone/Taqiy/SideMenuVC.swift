@@ -66,12 +66,10 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 1 {
             let vc = AllCategoriesVC()
-            sideMenuViewController?.setContentViewController(vc, animated: true)
-            sideMenuViewController?.hideMenuViewController()
+           
         } else if indexPath.section == 0 && indexPath.row == 0 {
             let vc = ChangeBranchVC()
-            sideMenuViewController?.setContentViewController(vc, animated: true)
-            sideMenuViewController?.hideMenuViewController()
+            
         }
     }
     
